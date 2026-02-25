@@ -68,28 +68,36 @@ the stored data. Cite the municipal code sections referenced in the file.
 **Only reach this step after reading and evaluating the stored references.** If the
 reference files do not contain the specific data the user needs, then search online.
 
-**CRITICAL: Limit yourself to ONE web search per user request.** Do not chain multiple
-searches, do not fetch multiple URLs, do not keep digging. One search, use whatever
-you get from it, and present your answer. If the single search doesn't return the
-exact numbers, say so honestly and point the user to the official source rather than
-burning through multiple searches.
+**CRITICAL: Limit yourself to ONE web search and a maximum of 3 URL fetches per
+user request.** Do not chain multiple searches, do not keep digging. One search, pick
+the best 1-3 results, and present your answer. If that doesn't return the exact
+numbers, say so honestly and point the user to the official source rather than burning
+through additional queries.
 
-**CRITICAL: Only use OFFICIAL sources.** When searching or fetching URLs, restrict to:
-- Official city/county/municipality websites (e.g., `.gov`, `.us` domains)
-- Official code libraries: `municode.com`, `amlegal.com`, `codepublishing.com`
-- Official planning department sites
-- Official GIS/zoning map tools (e.g., ZIMAS, ZoLa, city GIS portals)
+**CRITICAL: Only use these 4 source categories (in priority order):**
 
-**NEVER use** blogs, real estate agent sites, third-party guides, news articles, or
-any non-official source for zoning data. If the only results are unofficial, state
-that you could not find official data and direct the user to the city's planning
-department directly.
+1. **Official code libraries** — `amlegal.com`, `municode.com`, `codepublishing.com`
+   (these have the actual ordinance text; always try first)
+2. **Official city/county planning sites** — `.gov` or `.us` domains for the
+   jurisdiction's planning department (e.g., `planning.lacity.gov`,
+   `beverlyhills.org/planning`)
+3. **Official GIS/zoning map tools** — ZIMAS (`zimas.lacity.org`), ZoLa
+   (`zola.planning.nyc.gov`), or equivalent city GIS portals
+4. **Official municipal code sites** — direct `.gov` code search pages
 
-- Search for `"[city name] zoning code [zone classification]"` or `"[city name] municipal code zoning [zone]"`
-- For LA specifically, useful sources include:
-  - `planning.lacity.gov` (LA City Planning)
-  - `codelibrary.amlegal.com/codes/los_angeles`
-  - `zimas.lacity.org` (Zoning Information & Map Access System)
+**NEVER use** blogs, real estate agent sites, third-party guides, news articles,
+UpCodes, Lot-Lines, or any non-official source for zoning data. If the only results
+are unofficial, state that you could not find official data and direct the user to
+the city's planning department directly.
+
+**Search strategy:**
+- Use a single search: `"[city name] municipal code [zone classification]" site:amlegal.com OR site:municode.com OR site:.gov`
+- Fetch the top 1-2 official results that contain the zone's development standards
+- For jurisdictions with known portals, go direct:
+  - **Los Angeles:** `codelibrary.amlegal.com/codes/los_angeles` or `zimas.lacity.org`
+  - **Beverly Hills:** `codelibrary.amlegal.com/codes/beverlyhillsca`
+  - **NYC:** `zola.planning.nyc.gov` or `zoningreference.planning.nyc.gov`
+  - **Chicago:** `codelibrary.amlegal.com/codes/chicago`
 - When supplementing stored reference data with web results, clearly note which
   information came from the stored references vs. online sources
 
