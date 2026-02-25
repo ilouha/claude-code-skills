@@ -1,0 +1,540 @@
+{
+  "presets": {
+    "bathroom_remodel": {
+      "label": "Bathroom Remodel",
+      "total_duration_weeks": 6,
+      "phases": [
+        {
+          "phase": "Design & Planning",
+          "duration_weeks": 1,
+          "tasks": [
+            "Initial consultation & measurements",
+            "Layout design and fixture selections",
+            "Material procurement list"
+          ]
+        },
+        {
+          "phase": "Permitting",
+          "duration_weeks": 1,
+          "tasks": [
+            "Submit permit application",
+            "Permit approval and posting"
+          ]
+        },
+        {
+          "phase": "Demolition",
+          "duration_weeks": 0.5,
+          "tasks": [
+            "Protect adjacent areas",
+            "Remove existing fixtures, tile, and vanity",
+            "Haul debris"
+          ]
+        },
+        {
+          "phase": "Rough Plumbing & Electrical",
+          "duration_weeks": 1,
+          "tasks": [
+            "Relocate or rough-in plumbing lines",
+            "Rough-in electrical and lighting layout",
+            "Inspection sign-off"
+          ]
+        },
+        {
+          "phase": "Waterproofing & Tile",
+          "duration_weeks": 1,
+          "tasks": [
+            "Waterproof shower/tub area",
+            "Install backer board",
+            "Tile floors and walls",
+            "Grout and seal"
+          ]
+        },
+        {
+          "phase": "Vanity, Fixtures & Accessories",
+          "duration_weeks": 0.5,
+          "tasks": [
+            "Install vanity and countertop",
+            "Set toilet and shower/tub fixtures",
+            "Mount mirrors, towel bars, accessories"
+          ]
+        },
+        {
+          "phase": "Final Inspections & Punch List",
+          "duration_weeks": 1,
+          "tasks": [
+            "Final plumbing and electrical inspection",
+            "Touch-up paint and caulking",
+            "Client walkthrough and sign-off"
+          ]
+        }
+      ]
+    },
+    "kitchen_remodel": {
+      "label": "Kitchen Remodel",
+      "total_duration_weeks": 16,
+      "phases": [
+        {
+          "phase": "Design & Planning",
+          "duration_weeks": 3,
+          "tasks": [
+            "Initial consultation & measurements",
+            "Layout and material selections",
+            "Final design approval"
+          ]
+        },
+        {
+          "phase": "Permitting",
+          "duration_weeks": 2,
+          "tasks": [
+            "Submit permit application",
+            "Address any revision requests",
+            "Permit approval and posting"
+          ]
+        },
+        {
+          "phase": "Demolition",
+          "duration_weeks": 1,
+          "tasks": [
+            "Set up temporary kitchen if needed",
+            "Remove existing cabinets, countertops, flooring",
+            "Haul debris"
+          ]
+        },
+        {
+          "phase": "Rough Plumbing, Electrical & HVAC",
+          "duration_weeks": 2,
+          "tasks": [
+            "Relocate plumbing for new layout",
+            "Run electrical for appliances, lighting, outlets",
+            "HVAC adjustments if needed",
+            "Rough inspection sign-off"
+          ]
+        },
+        {
+          "phase": "Drywall & Painting",
+          "duration_weeks": 1,
+          "tasks": [
+            "Patch and hang drywall",
+            "Tape, mud, and sand",
+            "Prime and paint walls and ceiling"
+          ]
+        },
+        {
+          "phase": "Flooring",
+          "duration_weeks": 1,
+          "tasks": [
+            "Prep subfloor",
+            "Install flooring material",
+            "Transition strips and trim"
+          ]
+        },
+        {
+          "phase": "Cabinetry & Millwork",
+          "duration_weeks": 2,
+          "tasks": [
+            "Receive and inspect cabinet delivery",
+            "Install base and wall cabinets",
+            "Install trim, crown molding, and hardware"
+          ]
+        },
+        {
+          "phase": "Countertops",
+          "duration_weeks": 1,
+          "tasks": [
+            "Template countertops after cabinets set",
+            "Fabrication (off-site)",
+            "Install countertops and seal"
+          ]
+        },
+        {
+          "phase": "Backsplash & Finish Work",
+          "duration_weeks": 1,
+          "tasks": [
+            "Install backsplash tile",
+            "Grout and seal",
+            "Install under-cabinet lighting"
+          ]
+        },
+        {
+          "phase": "Appliance Installation",
+          "duration_weeks": 1,
+          "tasks": [
+            "Receive and inspect appliance delivery",
+            "Install and connect all appliances",
+            "Test all connections"
+          ]
+        },
+        {
+          "phase": "Final Inspections & Punch List",
+          "duration_weeks": 1,
+          "tasks": [
+            "Final building inspection",
+            "Touch-up paint, caulking, adjustments",
+            "Client walkthrough and sign-off"
+          ]
+        }
+      ]
+    },
+    "gut_renovation": {
+      "label": "Gut Renovation / Full Rehab",
+      "total_duration_weeks": 26,
+      "phases": [
+        {
+          "phase": "Design & Architecture",
+          "duration_weeks": 4,
+          "tasks": [
+            "As-built measurements and documentation",
+            "Architectural design and space planning",
+            "Engineering (structural, MEP) if needed",
+            "Final design approval and construction docs"
+          ]
+        },
+        {
+          "phase": "Permitting & Approvals",
+          "duration_weeks": 3,
+          "tasks": [
+            "Submit permit applications (DOB, landmarks, etc.)",
+            "Address examiner comments",
+            "Permit approval and posting"
+          ]
+        },
+        {
+          "phase": "Demolition",
+          "duration_weeks": 2,
+          "tasks": [
+            "Hazmat abatement if required (asbestos, lead)",
+            "Full interior demolition to studs",
+            "Debris haul and dumpster removal"
+          ]
+        },
+        {
+          "phase": "Structural Work",
+          "duration_weeks": 2,
+          "tasks": [
+            "Steel beam and column installation",
+            "Wall framing and layout changes",
+            "Subfloor repair or leveling"
+          ]
+        },
+        {
+          "phase": "Rough MEP (Mechanical, Electrical, Plumbing)",
+          "duration_weeks": 3,
+          "tasks": [
+            "Full plumbing rough-in",
+            "Electrical panel upgrade and rough wiring",
+            "HVAC ductwork and unit placement",
+            "Rough inspection sign-off"
+          ]
+        },
+        {
+          "phase": "Insulation & Drywall",
+          "duration_weeks": 2,
+          "tasks": [
+            "Install insulation (walls, ceilings)",
+            "Hang, tape, mud, and sand drywall",
+            "Skim coat if specified"
+          ]
+        },
+        {
+          "phase": "Flooring",
+          "duration_weeks": 2,
+          "tasks": [
+            "Prep and level subfloors",
+            "Install hardwood, tile, or other flooring",
+            "Transition strips between rooms"
+          ]
+        },
+        {
+          "phase": "Cabinetry & Millwork",
+          "duration_weeks": 2,
+          "tasks": [
+            "Kitchen and bathroom cabinet installation",
+            "Custom built-ins and closet systems",
+            "Trim, baseboards, and crown molding"
+          ]
+        },
+        {
+          "phase": "Countertops & Tile",
+          "duration_weeks": 2,
+          "tasks": [
+            "Template and install kitchen countertops",
+            "Bathroom vanity tops",
+            "Backsplash and bathroom tile work"
+          ]
+        },
+        {
+          "phase": "Painting & Finish Work",
+          "duration_weeks": 2,
+          "tasks": [
+            "Prime and paint all rooms",
+            "Finish carpentry touch-ups",
+            "Wallpaper or accent walls if specified"
+          ]
+        },
+        {
+          "phase": "Fixtures & Appliances",
+          "duration_weeks": 1,
+          "tasks": [
+            "Install all plumbing fixtures",
+            "Install light fixtures and switches",
+            "Set and connect appliances"
+          ]
+        },
+        {
+          "phase": "Final Inspections & Punch List",
+          "duration_weeks": 1,
+          "tasks": [
+            "Final DOB inspection",
+            "Punch list walkthrough with client",
+            "Final corrections and sign-off"
+          ]
+        }
+      ]
+    },
+    "new_construction": {
+      "label": "Ground Up / New Construction",
+      "total_duration_weeks": 52,
+      "phases": [
+        {
+          "phase": "Design & Architecture",
+          "duration_weeks": 6,
+          "tasks": [
+            "Schematic design and massing",
+            "Design development and material selections",
+            "Construction documents and engineering",
+            "Client design approval"
+          ]
+        },
+        {
+          "phase": "Permitting & Approvals",
+          "duration_weeks": 4,
+          "tasks": [
+            "Submit full building permit application",
+            "Zoning review and variance if needed",
+            "Address plan examiner comments",
+            "Permit issuance"
+          ]
+        },
+        {
+          "phase": "Site Prep & Foundation",
+          "duration_weeks": 4,
+          "tasks": [
+            "Survey and excavation",
+            "Footings and foundation walls",
+            "Waterproofing and drainage",
+            "Foundation inspection and backfill",
+            "Slab pour if applicable"
+          ]
+        },
+        {
+          "phase": "Framing",
+          "duration_weeks": 5,
+          "tasks": [
+            "First floor framing and subfloor",
+            "Second floor and additional stories",
+            "Roof framing and sheathing",
+            "Framing inspection"
+          ]
+        },
+        {
+          "phase": "Roofing",
+          "duration_weeks": 2,
+          "tasks": [
+            "Install underlayment and flashing",
+            "Roofing material installation",
+            "Gutter and downspout installation"
+          ]
+        },
+        {
+          "phase": "Windows & Exterior Envelope",
+          "duration_weeks": 3,
+          "tasks": [
+            "Window and exterior door installation",
+            "House wrap and weather barrier",
+            "Siding, brick, or exterior cladding"
+          ]
+        },
+        {
+          "phase": "Rough MEP",
+          "duration_weeks": 5,
+          "tasks": [
+            "Full plumbing rough-in (supply and waste)",
+            "Electrical panel, wiring, and low voltage",
+            "HVAC ductwork, units, and line sets",
+            "Fire suppression if required",
+            "Rough inspections (plumbing, electrical, mechanical)"
+          ]
+        },
+        {
+          "phase": "Insulation & Drywall",
+          "duration_weeks": 4,
+          "tasks": [
+            "Insulation installation (walls, attic, floors)",
+            "Insulation inspection",
+            "Drywall hang, tape, mud, sand",
+            "Skim coat or texture if specified"
+          ]
+        },
+        {
+          "phase": "Interior Finishes",
+          "duration_weeks": 5,
+          "tasks": [
+            "Flooring installation (hardwood, tile, carpet)",
+            "Interior painting (prime and two coats)",
+            "Tile work (bathrooms, kitchen backsplash)",
+            "Staircase and railing finish"
+          ]
+        },
+        {
+          "phase": "Cabinetry & Millwork",
+          "duration_weeks": 3,
+          "tasks": [
+            "Kitchen and bathroom cabinet installation",
+            "Custom built-ins and closets",
+            "Trim, baseboards, crown molding, doors"
+          ]
+        },
+        {
+          "phase": "Countertops & Fixtures",
+          "duration_weeks": 2,
+          "tasks": [
+            "Countertop template, fabrication, and install",
+            "Plumbing fixtures (sinks, faucets, toilets, tubs)",
+            "Light fixtures, switches, and outlet covers"
+          ]
+        },
+        {
+          "phase": "Appliances & Final MEP",
+          "duration_weeks": 2,
+          "tasks": [
+            "Appliance delivery and installation",
+            "HVAC commissioning and balancing",
+            "Final electrical and plumbing connections"
+          ]
+        },
+        {
+          "phase": "Landscaping & Exterior Finish",
+          "duration_weeks": 3,
+          "tasks": [
+            "Grading and drainage",
+            "Driveway and walkways",
+            "Planting, sod, or seeding",
+            "Fencing and exterior lighting"
+          ]
+        },
+        {
+          "phase": "Final Inspections & Certificate of Occupancy",
+          "duration_weeks": 4,
+          "tasks": [
+            "Final building inspection",
+            "Fire department sign-off",
+            "Certificate of Occupancy issuance",
+            "Punch list walkthrough and corrections",
+            "Client handover and warranty package"
+          ]
+        }
+      ]
+    },
+    "room_addition": {
+      "label": "Room Addition",
+      "total_duration_weeks": 16,
+      "phases": [
+        {
+          "phase": "Design & Architecture",
+          "duration_weeks": 3,
+          "tasks": [
+            "Measure existing structure and site",
+            "Design addition and tie-in to existing",
+            "Structural engineering",
+            "Construction documents"
+          ]
+        },
+        {
+          "phase": "Permitting",
+          "duration_weeks": 2,
+          "tasks": [
+            "Submit permit application",
+            "Zoning setback review",
+            "Permit approval and posting"
+          ]
+        },
+        {
+          "phase": "Foundation",
+          "duration_weeks": 2,
+          "tasks": [
+            "Excavation and footings",
+            "Foundation walls or slab",
+            "Foundation inspection",
+            "Waterproofing and backfill"
+          ]
+        },
+        {
+          "phase": "Framing",
+          "duration_weeks": 2,
+          "tasks": [
+            "Floor framing and subfloor",
+            "Wall framing",
+            "Roof framing and tie-in to existing structure",
+            "Framing inspection"
+          ]
+        },
+        {
+          "phase": "Roofing & Exterior Tie-in",
+          "duration_weeks": 1,
+          "tasks": [
+            "Roof sheathing and underlayment",
+            "Roofing material to match existing",
+            "Siding and exterior finish to match",
+            "Window and door installation"
+          ]
+        },
+        {
+          "phase": "Rough MEP",
+          "duration_weeks": 2,
+          "tasks": [
+            "Extend plumbing if needed",
+            "Electrical wiring and panel tie-in",
+            "HVAC extension or new zone",
+            "Rough inspection"
+          ]
+        },
+        {
+          "phase": "Insulation & Drywall",
+          "duration_weeks": 1,
+          "tasks": [
+            "Insulate walls, ceiling, and floor",
+            "Hang and finish drywall",
+            "Blend wall transitions to existing space"
+          ]
+        },
+        {
+          "phase": "Flooring & Painting",
+          "duration_weeks": 1,
+          "tasks": [
+            "Install flooring (match or complement existing)",
+            "Prime and paint walls and ceiling",
+            "Trim and baseboard installation"
+          ]
+        },
+        {
+          "phase": "Finish Work & Fixtures",
+          "duration_weeks": 1,
+          "tasks": [
+            "Install light fixtures and outlets",
+            "Plumbing fixtures if applicable",
+            "Doors, hardware, and closet systems"
+          ]
+        },
+        {
+          "phase": "Final Inspections & Punch List",
+          "duration_weeks": 1,
+          "tasks": [
+            "Final building inspection",
+            "Punch list walkthrough",
+            "Final corrections and client sign-off"
+          ]
+        }
+      ]
+    }
+  }
+}

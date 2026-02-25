@@ -1,0 +1,82 @@
+{
+  "skill_name": "building-code-skill",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "What is the max height and number of stories for a Type V-A apartment building?",
+      "expected_output": "Provides R-2 / Type V-A values from Tables 504.3 and 504.4, with and without sprinklers.",
+      "files": [],
+      "assertions": [
+        "Response identifies occupancy as R-2",
+        "Response states base stories (3) and height (70 ft) for Type V-A R-2",
+        "Response explains sprinkler bonus (+1 story, +20 ft with NFPA 13)",
+        "Response distinguishes NFPA 13 vs 13R bonuses",
+        "Response includes caveat about verifying with local jurisdiction"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "What occupancy classification is a restaurant?",
+      "expected_output": "Identifies restaurant as Group A-2 Assembly with food/drink consumption.",
+      "files": [],
+      "assertions": [
+        "Response identifies Group A-2",
+        "Response explains A-2 is for food and drink consumption",
+        "Response mentions sprinkler threshold (5,000 sqft or 100 occupants)",
+        "Response cites IBC Section 303.2"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "How many exits does my 3-story office building need? Each floor is about 8,000 sqft.",
+      "expected_output": "Calculates occupant load, determines 2 exits required, provides travel distance limits.",
+      "files": [],
+      "assertions": [
+        "Response classifies building as Group B",
+        "Response calculates occupant load using 150 sqft/person factor",
+        "Response determines 2 exits required (occupant load under 500)",
+        "Response states max travel distance (200 ft NS / 300 ft S for Group B)",
+        "Response mentions stairway width requirements"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "What fire-resistance ratings are required for a Type III-A building?",
+      "expected_output": "Lists all element ratings from Table 601 for Type III-A.",
+      "files": [],
+      "assertions": [
+        "Response states structural frame = 1 hr",
+        "Response states exterior bearing walls = 2 hr (noncombustible)",
+        "Response states interior bearing walls = 1 hr",
+        "Response states floor construction = 1 hr",
+        "Response states roof construction = 1 hr",
+        "Response uses Template D format with table"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Does my 20-unit apartment building need to be sprinklered?",
+      "expected_output": "Confirms R-2 always requires sprinklers, explains NFPA 13 vs 13R options.",
+      "files": [],
+      "assertions": [
+        "Response confirms sprinklers are required for R-2",
+        "Response explains NFPA 13 vs 13R options based on number of stories",
+        "Response mentions cost difference between systems",
+        "Response notes that NFPA 13R does not provide height/area bonuses"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "I'm building a 5-over-1 mixed-use building with retail on the ground floor and apartments above. What construction type do I need?",
+      "expected_output": "Explains podium building per IBC 510.2, Type I-A podium with Type III-A or V-A above.",
+      "files": [],
+      "assertions": [
+        "Response mentions IBC 510.2 podium/pedestal building provision",
+        "Response identifies ground floor as Type I-A",
+        "Response identifies upper floors as Type III-A or V-A",
+        "Response mentions occupancy separation between M and R-2",
+        "Response mentions sprinkler requirement"
+      ]
+    }
+  ]
+}

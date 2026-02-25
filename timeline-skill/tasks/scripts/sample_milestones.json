@@ -1,0 +1,187 @@
+{
+  "project": {
+    "name": "Smith Kitchen Remodel",
+    "type": "kitchen_remodel",
+    "start_date": "2026-03-15",
+    "end_date": "2026-07-04",
+    "total_duration_weeks": 16,
+    "generated_at": "2026-02-20T20:34:15.277521"
+  },
+  "milestones": [
+    {
+      "id": "phase_1",
+      "phase": "Design & Planning",
+      "start_date": "2026-03-15",
+      "end_date": "2026-04-04",
+      "duration_weeks": 3,
+      "status": "not_started",
+      "dependencies": [],
+      "tasks": [
+        "Initial consultation & measurements",
+        "Layout and material selections",
+        "Final design approval"
+      ]
+    },
+    {
+      "id": "phase_2",
+      "phase": "Permitting",
+      "start_date": "2026-04-05",
+      "end_date": "2026-04-18",
+      "duration_weeks": 2,
+      "status": "not_started",
+      "dependencies": [
+        "phase_1"
+      ],
+      "tasks": [
+        "Submit permit application",
+        "Address any revision requests",
+        "Permit approval and posting"
+      ]
+    },
+    {
+      "id": "phase_3",
+      "phase": "Demolition",
+      "start_date": "2026-04-19",
+      "end_date": "2026-04-25",
+      "duration_weeks": 1,
+      "status": "not_started",
+      "dependencies": [
+        "phase_2"
+      ],
+      "tasks": [
+        "Set up temporary kitchen if needed",
+        "Remove existing cabinets, countertops, flooring",
+        "Haul debris"
+      ]
+    },
+    {
+      "id": "phase_4",
+      "phase": "Rough Plumbing, Electrical & HVAC",
+      "start_date": "2026-04-26",
+      "end_date": "2026-05-09",
+      "duration_weeks": 2,
+      "status": "not_started",
+      "dependencies": [
+        "phase_3"
+      ],
+      "tasks": [
+        "Relocate plumbing for new layout",
+        "Run electrical for appliances, lighting, outlets",
+        "HVAC adjustments if needed",
+        "Rough inspection sign-off"
+      ]
+    },
+    {
+      "id": "phase_5",
+      "phase": "Drywall & Painting",
+      "start_date": "2026-05-10",
+      "end_date": "2026-05-16",
+      "duration_weeks": 1,
+      "status": "not_started",
+      "dependencies": [
+        "phase_4"
+      ],
+      "tasks": [
+        "Patch and hang drywall",
+        "Tape, mud, and sand",
+        "Prime and paint walls and ceiling"
+      ]
+    },
+    {
+      "id": "phase_6",
+      "phase": "Flooring",
+      "start_date": "2026-05-17",
+      "end_date": "2026-05-23",
+      "duration_weeks": 1,
+      "status": "not_started",
+      "dependencies": [
+        "phase_5"
+      ],
+      "tasks": [
+        "Prep subfloor",
+        "Install flooring material",
+        "Transition strips and trim"
+      ]
+    },
+    {
+      "id": "phase_7",
+      "phase": "Cabinetry & Millwork",
+      "start_date": "2026-05-24",
+      "end_date": "2026-06-06",
+      "duration_weeks": 2,
+      "status": "not_started",
+      "dependencies": [
+        "phase_6"
+      ],
+      "tasks": [
+        "Receive and inspect cabinet delivery",
+        "Install base and wall cabinets",
+        "Install trim, crown molding, and hardware"
+      ]
+    },
+    {
+      "id": "phase_8",
+      "phase": "Countertops",
+      "start_date": "2026-06-07",
+      "end_date": "2026-06-13",
+      "duration_weeks": 1,
+      "status": "not_started",
+      "dependencies": [
+        "phase_7"
+      ],
+      "tasks": [
+        "Template countertops after cabinets set",
+        "Fabrication (off-site)",
+        "Install countertops and seal"
+      ]
+    },
+    {
+      "id": "phase_9",
+      "phase": "Backsplash & Finish Work",
+      "start_date": "2026-06-14",
+      "end_date": "2026-06-20",
+      "duration_weeks": 1,
+      "status": "not_started",
+      "dependencies": [
+        "phase_8"
+      ],
+      "tasks": [
+        "Install backsplash tile",
+        "Grout and seal",
+        "Install under-cabinet lighting"
+      ]
+    },
+    {
+      "id": "phase_10",
+      "phase": "Appliance Installation",
+      "start_date": "2026-06-21",
+      "end_date": "2026-06-27",
+      "duration_weeks": 1,
+      "status": "not_started",
+      "dependencies": [
+        "phase_9"
+      ],
+      "tasks": [
+        "Receive and inspect appliance delivery",
+        "Install and connect all appliances",
+        "Test all connections"
+      ]
+    },
+    {
+      "id": "phase_11",
+      "phase": "Final Inspections & Punch List",
+      "start_date": "2026-06-28",
+      "end_date": "2026-07-04",
+      "duration_weeks": 1,
+      "status": "not_started",
+      "dependencies": [
+        "phase_10"
+      ],
+      "tasks": [
+        "Final building inspection",
+        "Touch-up paint, caulking, adjustments",
+        "Client walkthrough and sign-off"
+      ]
+    }
+  ]
+}

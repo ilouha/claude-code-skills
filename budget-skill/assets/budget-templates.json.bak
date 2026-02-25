@@ -1,0 +1,789 @@
+{
+  "Kitchen Remodel": {
+    "soft_costs": {
+      "subtotal_pct": 5.0,
+      "items": [
+        {
+          "category": "Design & Planning",
+          "line_item": "Interior / Kitchen Designer",
+          "description": "Space planning, material selections, 3D renderings",
+          "pct_of_total_budget": 2.0,
+          "notes": "Optional but recommended"
+        },
+        {
+          "category": "Permits & Fees",
+          "line_item": "Building Permit",
+          "description": "Required if relocating plumbing, electrical, or walls",
+          "pct_of_total_budget": 2.0,
+          "notes": ""
+        },
+        {
+          "category": "Project Management",
+          "line_item": "Pre-Construction Project Management",
+          "description": "GC pre-con, bidding coordination, scheduling",
+          "pct_of_total_budget": 1.0,
+          "notes": ""
+        }
+      ]
+    },
+    "hard_costs": {
+      "subtotal_pct": 95.0,
+      "items": [
+        {
+          "category": "Demo & Prep",
+          "line_item": "Demolition",
+          "description": "Remove cabinets, flooring, drywall, soffits",
+          "pct_of_total_budget": 4.0,
+          "notes": ""
+        },
+        {
+          "category": "Demo & Prep",
+          "line_item": "Haul Away & Disposal",
+          "description": "Dumpster rental and debris removal",
+          "pct_of_total_budget": 2.0,
+          "notes": ""
+        },
+        {
+          "category": "Rough Plumbing",
+          "line_item": "Rough Plumbing",
+          "description": "Relocate/add supply and drain for sink, dishwasher, ice maker",
+          "pct_of_total_budget": 5.0,
+          "notes": "Before drywall"
+        },
+        {
+          "category": "Rough Electrical",
+          "line_item": "Rough Electrical",
+          "description": "New circuits: fridge, dishwasher, hood, island, under-cabinet",
+          "pct_of_total_budget": 5.0,
+          "notes": "Before drywall"
+        },
+        {
+          "category": "Rough HVAC",
+          "line_item": "Range Hood / Ventilation Rough-In",
+          "description": "Duct for vented hood or recirculating rough-in",
+          "pct_of_total_budget": 2.0,
+          "notes": ""
+        },
+        {
+          "category": "Drywall",
+          "line_item": "Drywall Hang, Tape & Finish",
+          "description": "Patch or full hang after rough-in inspections pass",
+          "pct_of_total_budget": 4.0,
+          "notes": ""
+        },
+        {
+          "category": "Flooring",
+          "line_item": "Flooring Material & Installation",
+          "description": "LVP, hardwood, or tile \u2014 install before cabinet set",
+          "pct_of_total_budget": 5.0,
+          "notes": ""
+        },
+        {
+          "category": "Cabinets",
+          "line_item": "Cabinet Supply",
+          "description": "Stock, semi-custom, or custom cabinetry material",
+          "pct_of_total_budget": 14.0,
+          "notes": "Largest single cost driver"
+        },
+        {
+          "category": "Cabinets",
+          "line_item": "Cabinet Installation",
+          "description": "Set and level uppers/lowers, crown molding",
+          "pct_of_total_budget": 5.0,
+          "notes": ""
+        },
+        {
+          "category": "Countertops",
+          "line_item": "Countertop Material & Fabrication",
+          "description": "Quartz, granite, or laminate \u2014 templated after cabinets set",
+          "pct_of_total_budget": 8.0,
+          "notes": "Template after cabinets"
+        },
+        {
+          "category": "Countertops",
+          "line_item": "Countertop Installation",
+          "description": "Set tops, undermount sink cutout, seams",
+          "pct_of_total_budget": 2.0,
+          "notes": ""
+        },
+        {
+          "category": "Finish Plumbing",
+          "line_item": "Finish Plumbing",
+          "description": "Set sink, faucet, garbage disposal, dishwasher hookup",
+          "pct_of_total_budget": 3.0,
+          "notes": "After counters"
+        },
+        {
+          "category": "Finish Electrical",
+          "line_item": "Finish Electrical",
+          "description": "Outlets, under-cabinet lighting, hood, light fixtures",
+          "pct_of_total_budget": 3.0,
+          "notes": "After paint"
+        },
+        {
+          "category": "Backsplash",
+          "line_item": "Backsplash Tile & Installation",
+          "description": "Tile material, setting, and grout behind counter/range",
+          "pct_of_total_budget": 4.0,
+          "notes": "After counters, before paint"
+        },
+        {
+          "category": "Appliances",
+          "line_item": "Appliance Package",
+          "description": "Range, refrigerator, dishwasher, microwave/hood",
+          "pct_of_total_budget": 10.0,
+          "notes": "Varies by brand selection"
+        },
+        {
+          "category": "Finishes",
+          "line_item": "Interior Paint",
+          "description": "Prime and finish walls, ceiling, and trim",
+          "pct_of_total_budget": 3.0,
+          "notes": ""
+        },
+        {
+          "category": "Finishes",
+          "line_item": "Hardware, Lighting & Trim",
+          "description": "Cabinet pulls, light fixtures, crown, baseboard touchup",
+          "pct_of_total_budget": 3.0,
+          "notes": "Last items installed"
+        },
+        {
+          "category": "Contingency",
+          "line_item": "Contingency Reserve",
+          "description": "Buffer for hidden conditions and scope changes",
+          "pct_of_total_budget": 5.0,
+          "notes": "Never skip \u2014 5\u201310%"
+        },
+        {
+          "category": "GC Fee",
+          "line_item": "General Contractor Overhead & Profit",
+          "description": "GC markup on all subs and materials",
+          "pct_of_total_budget": 8.0,
+          "notes": "Typically 10\u201315%"
+        }
+      ]
+    },
+    "total_pct": 100.0
+  },
+  "Bathroom Remodel": {
+    "soft_costs": {
+      "subtotal_pct": 6.0,
+      "items": [
+        {
+          "category": "Design & Planning",
+          "line_item": "Interior / Tile Designer",
+          "description": "Layout, tile selection, fixture specification",
+          "pct_of_total_budget": 2.0,
+          "notes": "Optional"
+        },
+        {
+          "category": "Permits & Fees",
+          "line_item": "Building Permit",
+          "description": "Plumbing and electrical permits required",
+          "pct_of_total_budget": 2.0,
+          "notes": ""
+        },
+        {
+          "category": "Project Management",
+          "line_item": "Project Management",
+          "description": "Sub coordination and scheduling",
+          "pct_of_total_budget": 2.0,
+          "notes": ""
+        }
+      ]
+    },
+    "hard_costs": {
+      "subtotal_pct": 94.0,
+      "items": [
+        {
+          "category": "Demo & Prep",
+          "line_item": "Demolition",
+          "description": "Remove tile, vanity, tub/shower, flooring, drywall",
+          "pct_of_total_budget": 4.0,
+          "notes": ""
+        },
+        {
+          "category": "Demo & Prep",
+          "line_item": "Haul Away & Disposal",
+          "description": "Dumpster and debris removal",
+          "pct_of_total_budget": 2.0,
+          "notes": ""
+        },
+        {
+          "category": "Rough Plumbing",
+          "line_item": "Rough Plumbing",
+          "description": "Relocate supply/drain for tub, shower, toilet, vanity",
+          "pct_of_total_budget": 8.0,
+          "notes": "Higher cost if moving fixtures"
+        },
+        {
+          "category": "Rough Electrical",
+          "line_item": "Rough Electrical",
+          "description": "GFCI circuits, exhaust fan, heated floor wiring",
+          "pct_of_total_budget": 5.0,
+          "notes": ""
+        },
+        {
+          "category": "Waterproofing",
+          "line_item": "Cement Board & Waterproofing Membrane",
+          "description": "Backer board + Schluter/RedGard on shower and wet areas",
+          "pct_of_total_budget": 4.0,
+          "notes": "Never skip \u2014 critical for longevity"
+        },
+        {
+          "category": "Shower / Tub",
+          "line_item": "Shower or Tub Unit",
+          "description": "Custom tile shower, pre-fab unit, or freestanding tub",
+          "pct_of_total_budget": 11.0,
+          "notes": "Custom tile costs significantly more"
+        },
+        {
+          "category": "Shower / Tub",
+          "line_item": "Glass Enclosure / Shower Door",
+          "description": "Frameless or framed glass enclosure",
+          "pct_of_total_budget": 5.0,
+          "notes": "Installed after tile"
+        },
+        {
+          "category": "Flooring",
+          "line_item": "Floor Tile & Installation",
+          "description": "Porcelain, ceramic, or stone; heated floor mat option",
+          "pct_of_total_budget": 6.0,
+          "notes": ""
+        },
+        {
+          "category": "Wall Tile",
+          "line_item": "Wall Tile & Installation",
+          "description": "Shower surround and accent walls",
+          "pct_of_total_budget": 5.0,
+          "notes": ""
+        },
+        {
+          "category": "Drywall & Paint",
+          "line_item": "Moisture-Resistant Drywall",
+          "description": "Green/purple board in wet areas; tape and mud",
+          "pct_of_total_budget": 3.0,
+          "notes": ""
+        },
+        {
+          "category": "Drywall & Paint",
+          "line_item": "Paint, Trim & Caulk",
+          "description": "Walls, ceiling, baseboard, door casing",
+          "pct_of_total_budget": 3.0,
+          "notes": ""
+        },
+        {
+          "category": "Finish Plumbing",
+          "line_item": "Finish Plumbing",
+          "description": "Set toilet, vanity faucet, shower valve trim, tub filler",
+          "pct_of_total_budget": 6.0,
+          "notes": "After tile"
+        },
+        {
+          "category": "Finish Electrical",
+          "line_item": "Finish Electrical",
+          "description": "Exhaust fan, vanity lights, GFCI outlet covers",
+          "pct_of_total_budget": 3.0,
+          "notes": ""
+        },
+        {
+          "category": "Vanity & Fixtures",
+          "line_item": "Vanity Cabinet & Countertop",
+          "description": "Vanity with integrated or separate sink/top",
+          "pct_of_total_budget": 7.0,
+          "notes": ""
+        },
+        {
+          "category": "Vanity & Fixtures",
+          "line_item": "Mirror, Accessories & Hardware",
+          "description": "Mirror, towel bars, toilet paper holder, hooks",
+          "pct_of_total_budget": 3.0,
+          "notes": "Last items in"
+        },
+        {
+          "category": "Contingency",
+          "line_item": "Contingency Reserve",
+          "description": "Rot, mold, and old pipe issues are common in bathrooms",
+          "pct_of_total_budget": 6.0,
+          "notes": "Budget 8\u201310% for older homes"
+        },
+        {
+          "category": "GC Fee",
+          "line_item": "General Contractor Overhead & Profit",
+          "description": "GC markup on all subs and materials",
+          "pct_of_total_budget": 11.0,
+          "notes": ""
+        },
+        {
+          "category": "Specialty",
+          "line_item": "Optional Upgrades",
+          "description": "Heated floors, steam unit, custom niche, towel warmer",
+          "pct_of_total_budget": 2.0,
+          "notes": "If applicable"
+        }
+      ]
+    },
+    "total_pct": 100.0
+  },
+  "Full Rehab": {
+    "soft_costs": {
+      "subtotal_pct": 10.0,
+      "items": [
+        {
+          "category": "Pre-Construction",
+          "line_item": "Architect / Designer",
+          "description": "As-built drawings, design development, permit docs",
+          "pct_of_total_budget": 2.0,
+          "notes": ""
+        },
+        {
+          "category": "Pre-Construction",
+          "line_item": "Structural Engineer",
+          "description": "Foundation, beam, and load-bearing wall analysis",
+          "pct_of_total_budget": 1.0,
+          "notes": "Required for structural work"
+        },
+        {
+          "category": "Pre-Construction",
+          "line_item": "Feasibility / Due Diligence",
+          "description": "Inspection, environmental report, title and survey review",
+          "pct_of_total_budget": 1.0,
+          "notes": "Pre-purchase or pre-permit"
+        },
+        {
+          "category": "Permits & Fees",
+          "line_item": "Building Permits (All Trades)",
+          "description": "Building, electrical, plumbing, and mechanical permits",
+          "pct_of_total_budget": 2.0,
+          "notes": ""
+        },
+        {
+          "category": "Permits & Fees",
+          "line_item": "Impact Fees / Utility Reconnects",
+          "description": "Water/sewer tap fees, utility reconnection charges",
+          "pct_of_total_budget": 1.0,
+          "notes": ""
+        },
+        {
+          "category": "Project Management",
+          "line_item": "Owner's Project Manager / Pre-Con",
+          "description": "Budget, bidding, and schedule before construction starts",
+          "pct_of_total_budget": 1.0,
+          "notes": ""
+        },
+        {
+          "category": "Financing",
+          "line_item": "Construction Loan Fees & Interest",
+          "description": "Draw fees, inspection fees, carry interest during build",
+          "pct_of_total_budget": 2.0,
+          "notes": ""
+        }
+      ]
+    },
+    "hard_costs": {
+      "subtotal_pct": 90.0,
+      "items": [
+        {
+          "category": "Site Prep & Demo",
+          "line_item": "Full Interior Demolition",
+          "description": "Gut walls, flooring, ceilings, fixtures, MEP rough removal",
+          "pct_of_total_budget": 3.0,
+          "notes": ""
+        },
+        {
+          "category": "Site Prep & Demo",
+          "line_item": "Hazmat Abatement",
+          "description": "Asbestos and lead paint testing and abatement",
+          "pct_of_total_budget": 1.0,
+          "notes": "Required if pre-1980"
+        },
+        {
+          "category": "Site Prep & Demo",
+          "line_item": "Haul Away & Disposal",
+          "description": "Multiple dumpsters for full gut",
+          "pct_of_total_budget": 2.0,
+          "notes": ""
+        },
+        {
+          "category": "Structural",
+          "line_item": "Foundation Repair",
+          "description": "Crack repair, waterproofing, underpinning as needed",
+          "pct_of_total_budget": 3.0,
+          "notes": "Highly variable by condition"
+        },
+        {
+          "category": "Structural",
+          "line_item": "Framing Repairs",
+          "description": "Sistering joists, replacing rotted lumber, bearing walls",
+          "pct_of_total_budget": 2.0,
+          "notes": ""
+        },
+        {
+          "category": "Exterior",
+          "line_item": "Roof Replacement",
+          "description": "Tear-off, decking, underlayment, shingles + gutters",
+          "pct_of_total_budget": 5.0,
+          "notes": ""
+        },
+        {
+          "category": "Exterior",
+          "line_item": "Windows & Exterior Doors",
+          "description": "Full window replacement and entry/patio doors",
+          "pct_of_total_budget": 4.0,
+          "notes": ""
+        },
+        {
+          "category": "Exterior",
+          "line_item": "Siding & Exterior Finishes",
+          "description": "New siding, paint, soffit, fascia, trim",
+          "pct_of_total_budget": 3.0,
+          "notes": ""
+        },
+        {
+          "category": "Rough Plumbing",
+          "line_item": "Full Plumbing Repipe",
+          "description": "Replace all supply and drain lines; new water heater",
+          "pct_of_total_budget": 6.0,
+          "notes": ""
+        },
+        {
+          "category": "Rough Electrical",
+          "line_item": "Full Electrical Rewire",
+          "description": "Panel upgrade, new branch circuits, wiring throughout",
+          "pct_of_total_budget": 6.0,
+          "notes": ""
+        },
+        {
+          "category": "Rough HVAC",
+          "line_item": "HVAC System Replacement",
+          "description": "New furnace/AC or mini-splits; ductwork if needed",
+          "pct_of_total_budget": 5.0,
+          "notes": ""
+        },
+        {
+          "category": "Insulation",
+          "line_item": "Insulation Throughout",
+          "description": "Wall cavities, attic, crawl space, rim joists",
+          "pct_of_total_budget": 2.0,
+          "notes": "After rough-in, before drywall"
+        },
+        {
+          "category": "Drywall",
+          "line_item": "Drywall Hang, Tape & Finish",
+          "description": "Full hang throughout after rough-ins pass inspection",
+          "pct_of_total_budget": 4.0,
+          "notes": ""
+        },
+        {
+          "category": "Flooring",
+          "line_item": "Flooring Throughout",
+          "description": "Hardwood, LVP, and tile by room",
+          "pct_of_total_budget": 5.0,
+          "notes": ""
+        },
+        {
+          "category": "Kitchen",
+          "line_item": "Kitchen (Cabinets, Counters, Appl.)",
+          "description": "See Kitchen Remodel tab for full detail",
+          "pct_of_total_budget": 7.0,
+          "notes": ""
+        },
+        {
+          "category": "Bathrooms",
+          "line_item": "All Bathrooms",
+          "description": "See Bathroom Remodel tab for full detail",
+          "pct_of_total_budget": 5.0,
+          "notes": ""
+        },
+        {
+          "category": "Finish Carpentry",
+          "line_item": "Interior Doors, Trim & Hardware",
+          "description": "All interior doors, casing, baseboard, and hardware",
+          "pct_of_total_budget": 3.0,
+          "notes": ""
+        },
+        {
+          "category": "Paint",
+          "line_item": "Interior & Exterior Paint",
+          "description": "Full prime and finish throughout",
+          "pct_of_total_budget": 3.0,
+          "notes": ""
+        },
+        {
+          "category": "Finish MEP",
+          "line_item": "Finish Plumbing & Electrical",
+          "description": "Set all fixtures, outlets, covers, and devices",
+          "pct_of_total_budget": 2.0,
+          "notes": ""
+        },
+        {
+          "category": "Site & Landscaping",
+          "line_item": "Final Grade, Driveway & Landscaping",
+          "description": "Final grading, seed/sod, driveway repair, walkways",
+          "pct_of_total_budget": 2.0,
+          "notes": ""
+        },
+        {
+          "category": "Contingency",
+          "line_item": "Contingency Reserve",
+          "description": "Older homes: hidden rot, mold, outdated systems common",
+          "pct_of_total_budget": 6.0,
+          "notes": "Budget 10%+ for pre-1970 homes"
+        },
+        {
+          "category": "GC Fee",
+          "line_item": "General Contractor Overhead & Profit",
+          "description": "GC markup; full rehab typically 12\u201318%",
+          "pct_of_total_budget": 11.0,
+          "notes": ""
+        }
+      ]
+    },
+    "total_pct": 100.0
+  },
+  "New Construction": {
+    "soft_costs": {
+      "subtotal_pct": 18.0,
+      "items": [
+        {
+          "category": "Land Acquisition",
+          "line_item": "Land / Lot Purchase",
+          "description": "Acquisition of raw land or finished lot",
+          "pct_of_total_budget": 10.0,
+          "notes": "Highly location-dependent \u2014 can be 5\u201325%"
+        },
+        {
+          "category": "Pre-Construction",
+          "line_item": "Survey & Soil / Geotech Testing",
+          "description": "Boundary survey, perc test, geotechnical boring report",
+          "pct_of_total_budget": 1.0,
+          "notes": "Required before design"
+        },
+        {
+          "category": "Pre-Construction",
+          "line_item": "Architecture & Structural Engineering",
+          "description": "Schematic design, construction docs, structural calcs",
+          "pct_of_total_budget": 2.0,
+          "notes": "3\u20135% of hard construction cost"
+        },
+        {
+          "category": "Pre-Construction",
+          "line_item": "Civil Engineering",
+          "description": "Grading plan, drainage, utility layout, site plan",
+          "pct_of_total_budget": 1.0,
+          "notes": ""
+        },
+        {
+          "category": "Permits & Fees",
+          "line_item": "Building Permit",
+          "description": "Full permit for all trades bundled",
+          "pct_of_total_budget": 1.0,
+          "notes": ""
+        },
+        {
+          "category": "Permits & Fees",
+          "line_item": "Impact Fees (School, Parks, Utility)",
+          "description": "One-time development fees \u2014 can be $10K\u2013$50K+",
+          "pct_of_total_budget": 1.0,
+          "notes": ""
+        },
+        {
+          "category": "Permits & Fees",
+          "line_item": "Utility Connection Fees",
+          "description": "Water/sewer/gas tap fees and meter installations",
+          "pct_of_total_budget": 1.0,
+          "notes": ""
+        },
+        {
+          "category": "Financing",
+          "line_item": "Construction Loan Fees & Interest",
+          "description": "Origination, draw fees, and carry interest during build",
+          "pct_of_total_budget": 1.0,
+          "notes": ""
+        }
+      ]
+    },
+    "hard_costs": {
+      "subtotal_pct": 82.0,
+      "items": [
+        {
+          "category": "Site Work",
+          "line_item": "Site Clearing & Rough Grading",
+          "description": "Tree removal, cut and fill grading, drainage swales",
+          "pct_of_total_budget": 2.0,
+          "notes": ""
+        },
+        {
+          "category": "Site Work",
+          "line_item": "Erosion Control & Temp Utilities",
+          "description": "Silt fence, temp power pole, portable toilet, fencing",
+          "pct_of_total_budget": 1.0,
+          "notes": ""
+        },
+        {
+          "category": "Foundation",
+          "line_item": "Foundation Excavation",
+          "description": "Dig, form, and brace footings and foundation walls",
+          "pct_of_total_budget": 2.0,
+          "notes": ""
+        },
+        {
+          "category": "Foundation",
+          "line_item": "Foundation Pour & Waterproofing",
+          "description": "Concrete slab/crawl/basement; waterproofing and radon rough-in",
+          "pct_of_total_budget": 5.0,
+          "notes": "Basement adds 5\u20138%"
+        },
+        {
+          "category": "Framing",
+          "line_item": "Framing Package (Labor & Materials)",
+          "description": "Lumber, engineered beams, OSB sheathing, all framing labor",
+          "pct_of_total_budget": 11.0,
+          "notes": "Largest single hard cost"
+        },
+        {
+          "category": "Exterior Shell",
+          "line_item": "Roofing",
+          "description": "Sheathing, underlayment, shingles/metal/tile + flashing",
+          "pct_of_total_budget": 4.0,
+          "notes": ""
+        },
+        {
+          "category": "Exterior Shell",
+          "line_item": "Windows & Exterior Doors",
+          "description": "All windows, front door, patio and garage doors",
+          "pct_of_total_budget": 4.0,
+          "notes": ""
+        },
+        {
+          "category": "Exterior Shell",
+          "line_item": "Siding / Exterior Finish",
+          "description": "Hardie plank, vinyl, stucco, brick or stone veneer",
+          "pct_of_total_budget": 4.0,
+          "notes": ""
+        },
+        {
+          "category": "Rough Plumbing",
+          "line_item": "Rough Plumbing",
+          "description": "Underground slab rough, all supply and DWV piping",
+          "pct_of_total_budget": 3.0,
+          "notes": ""
+        },
+        {
+          "category": "Rough Electrical",
+          "line_item": "Rough Electrical",
+          "description": "Temp power, panel, branch circuits, low-voltage rough",
+          "pct_of_total_budget": 3.0,
+          "notes": ""
+        },
+        {
+          "category": "Rough HVAC",
+          "line_item": "Rough HVAC",
+          "description": "Equipment, ductwork or refrigerant lines, exhaust fans",
+          "pct_of_total_budget": 3.0,
+          "notes": ""
+        },
+        {
+          "category": "Insulation",
+          "line_item": "Insulation",
+          "description": "Wall batt or spray foam, blown attic, rim joist sealing",
+          "pct_of_total_budget": 2.0,
+          "notes": "After rough-in inspections"
+        },
+        {
+          "category": "Drywall",
+          "line_item": "Drywall Hang, Tape & Finish",
+          "description": "Full hang, tape, mud, and texture throughout",
+          "pct_of_total_budget": 4.0,
+          "notes": ""
+        },
+        {
+          "category": "Flooring",
+          "line_item": "Flooring Throughout",
+          "description": "Hardwood, tile, carpet, LVP by room per plan",
+          "pct_of_total_budget": 4.0,
+          "notes": ""
+        },
+        {
+          "category": "Kitchen",
+          "line_item": "Kitchen (Cabinets, Counters, Appl.)",
+          "description": "See Kitchen Remodel tab for detail",
+          "pct_of_total_budget": 5.0,
+          "notes": ""
+        },
+        {
+          "category": "Bathrooms",
+          "line_item": "All Bathrooms",
+          "description": "See Bathroom Remodel tab for detail",
+          "pct_of_total_budget": 4.0,
+          "notes": ""
+        },
+        {
+          "category": "Finish Carpentry",
+          "line_item": "Interior Doors, Trim & Hardware",
+          "description": "All interior doors, casing, baseboard, and hardware",
+          "pct_of_total_budget": 2.0,
+          "notes": ""
+        },
+        {
+          "category": "Finish MEP",
+          "line_item": "Finish Plumbing",
+          "description": "Set all fixtures, water heater, hose bibs, trim out",
+          "pct_of_total_budget": 2.0,
+          "notes": ""
+        },
+        {
+          "category": "Finish MEP",
+          "line_item": "Finish Electrical",
+          "description": "Devices, fixtures, panel trim-out, inspector walkthrough",
+          "pct_of_total_budget": 2.0,
+          "notes": ""
+        },
+        {
+          "category": "Finish MEP",
+          "line_item": "Finish HVAC",
+          "description": "Set equipment, balance system, thermostat, commissioning",
+          "pct_of_total_budget": 1.0,
+          "notes": ""
+        },
+        {
+          "category": "Paint",
+          "line_item": "Interior & Exterior Paint",
+          "description": "Prime and finish all surfaces inside and out",
+          "pct_of_total_budget": 2.0,
+          "notes": ""
+        },
+        {
+          "category": "Site & Landscaping",
+          "line_item": "Driveway, Walks & Final Grade",
+          "description": "Concrete/asphalt driveway, walkways, finish grading",
+          "pct_of_total_budget": 2.0,
+          "notes": ""
+        },
+        {
+          "category": "Site & Landscaping",
+          "line_item": "Landscaping & Sod",
+          "description": "Topsoil, sod or seed, basic plantings",
+          "pct_of_total_budget": 1.0,
+          "notes": ""
+        },
+        {
+          "category": "Contingency",
+          "line_item": "Contingency Reserve",
+          "description": "New construction: 5\u20138%; custom/complex builds higher",
+          "pct_of_total_budget": 4.0,
+          "notes": "Never remove"
+        },
+        {
+          "category": "GC Fee",
+          "line_item": "General Contractor Overhead & Profit",
+          "description": "GC markup on all hard costs; typically 10\u201315%",
+          "pct_of_total_budget": 5.0,
+          "notes": ""
+        }
+      ]
+    },
+    "total_pct": 100.0
+  }
+}

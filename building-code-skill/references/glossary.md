@@ -1,0 +1,42 @@
+# Building Code Terminology Glossary
+
+- **AHJ (Authority Having Jurisdiction)**: The local building official or fire marshal who enforces the code.
+- **Allowable Area**: Maximum floor area per story permitted by IBC Table 506.2, before increases.
+- **Assembly Occupancy**: Building where 50+ people gather (Group A). Threshold is 49 — under 50 is usually B or M.
+- **Bearing Wall**: A wall that supports loads from above (floor, roof, other walls). Has higher fire-resistance requirements.
+- **CBC (California Building Code)**: California's amended version of the IBC.
+- **CLT (Cross-Laminated Timber)**: Engineered wood product used in mass timber (Type IV) construction.
+- **Common Path of Egress Travel**: Distance from most remote point to where two separate exit paths become available.
+- **Construction Type**: Classification (I-A through V-B) that defines required fire-resistance for structural elements.
+- **Dead-End Corridor**: A corridor with only one way out. Limited to 20 ft (non-sprinklered) or 50 ft (sprinklered).
+- **Exit**: The protected portion of egress (stairway, passageway, exterior door at grade).
+- **Exit Access**: The path from occupied space TO the exit (corridors, aisles, doorways).
+- **Exit Discharge**: The path FROM the exit to the public way (lobby, vestibule, exterior path).
+- **Fire Area**: The aggregate floor area enclosed by fire walls, fire barriers, exterior walls, or fire-resistance-rated horizontal assemblies.
+- **Fire Barrier**: A fire-resistance-rated wall assembly used for occupancy separations, shaft enclosures, exit enclosures. Extends from floor slab to floor/roof slab above.
+- **Fire Partition**: A lower-rated wall assembly for dwelling unit separation, corridor walls, tenant separation.
+- **Fire Separation Distance**: Distance from building face to lot line, street centerline, or imaginary line between buildings on same lot.
+- **Fire Wall**: A fire-resistance-rated wall that creates separate buildings for code purposes. Must be structurally independent.
+- **Frontage Increase**: Additional allowable area based on open space around the building perimeter (IBC 506.2).
+- **Gross Area**: Total floor area measured to exterior face of walls, including corridors, shafts, walls.
+- **IBC**: International Building Code — the model code adopted (with amendments) by most US jurisdictions.
+- **ICC**: International Code Council — the organization that publishes the IBC and related codes.
+- **IEBC**: International Existing Building Code — applies to renovations of existing buildings.
+- **IRC**: International Residential Code — governs 1-2 family dwellings and townhouses up to 3 stories.
+- **Mass Timber**: Engineered wood products (CLT, glulam, NLT) used in Type IV construction.
+- **Means of Egress**: The continuous and unobstructed path of travel from any occupied point to the public way. Three parts: exit access, exit, exit discharge.
+- **Mixed Occupancy**: A building containing two or more occupancy groups. Can be "separated" (fire barriers between) or "non-separated" (most restrictive rules apply everywhere).
+- **Net Area**: Floor area excluding walls, shafts, corridors, and other non-occupied space.
+- **NFPA 13**: National Fire Protection Association standard for automatic sprinkler systems (commercial).
+- **NFPA 13D**: Sprinkler standard for one- and two-family dwellings.
+- **NFPA 13R**: Sprinkler standard for residential occupancies up to 4 stories.
+- **Noncombustible**: Materials that do not ignite or burn when subjected to fire (steel, concrete, masonry).
+- **Occupancy Group**: Classification of a building by its use (A through U). Determines code requirements.
+- **Occupant Load**: The number of persons for which egress must be provided, calculated from Table 1004.5.
+- **Podium (Pedestal) Building**: IBC 510.2 — a Type I-A podium supporting a different construction type above. Common for "5-over-1" apartment buildings.
+- **Public Way**: A street, alley, or other parcel of land permanently dedicated to public use with a min clear width of 10 ft.
+- **Rated Assembly**: A wall, floor, or roof assembly tested and rated for fire-resistance (e.g., 1-hr, 2-hr).
+- **Shaft Enclosure**: Fire-barrier-enclosed vertical opening (elevator shaft, stair shaft, mechanical chase, duct shaft).
+- **Sprinklered Building**: A building equipped with an automatic sprinkler system per NFPA 13, 13R, or 13D.
+- **Travel Distance**: The distance from the most remote point in an occupied space to the nearest exit, measured along the path of egress travel.
+- **Type X Gypsum**: 5/8-inch gypsum board with glass fiber reinforcement that provides fire resistance. The standard fire-rated drywall.

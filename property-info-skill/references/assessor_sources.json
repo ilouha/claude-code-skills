@@ -1,0 +1,376 @@
+{
+  "_meta": {
+    "description": "Assessor portal URLs and field mappings by jurisdiction. This file grows automatically as the property-info-skill discovers new portals.",
+    "last_updated": "2026-02-24"
+  },
+  "jurisdictions": {
+    "los_angeles_county": {
+      "county": "Los Angeles",
+      "state": "CA",
+      "assessor_name": "Los Angeles County Assessor",
+      "base_url": "https://assessor.lacounty.gov",
+      "portal_url": "https://portal.assessor.lacounty.gov",
+      "parcel_detail_url": "https://portal.assessor.lacounty.gov/parceldetail/{ain}",
+      "api": {
+        "search_endpoint": "https://portal.assessor.lacounty.gov/api/search?search={address}",
+        "detail_endpoint": "https://portal.assessor.lacounty.gov/api/parceldetail?ain={ain}",
+        "method": "web_fetch",
+        "response_format": "JSON",
+        "notes": "Search returns {TotalCount, Parcels[{AIN, SitusStreet, SitusCity, SitusZipCode, LegalDescription}]}. Use first match AIN, then fetch detail endpoint for full data."
+      },
+      "search_method": "api",
+      "search_workflow": [
+        "1. web_fetch the search endpoint with the street address (e.g. '1161 Hartzell St')",
+        "2. Parse JSON response — first Parcel in array is typically the best match",
+        "3. Extract AIN from the matched parcel",
+        "4. web_fetch the detail endpoint with that AIN for full property data",
+        "5. Parse the detail JSON for all property fields"
+      ],
+      "field_mappings": {
+        "parcel_number": "AIN",
+        "situs_address": "SitusStreet + SitusCity + SitusZipCode",
+        "lot_area": "LotSize (sq ft)",
+        "lot_usable_area": "UsableSqFt",
+        "lot_width": "LotWidth (ft)",
+        "lot_depth": "LotDepth (ft)",
+        "building_area": "MainBuildingSqFt",
+        "legal_description": "LegalDescription",
+        "year_built": "YearBuilt",
+        "effective_year": "EffectiveYear",
+        "zoning": "Zoning",
+        "use_type": "UseType",
+        "quality_class": "QualityClass",
+        "design_type": "DesignType",
+        "bedrooms": "Bedrooms",
+        "bathrooms": "Bathrooms",
+        "land_value": "LandValue",
+        "improvement_value": "ImprovementValue",
+        "assessed_value": "LandValue + ImprovementValue",
+        "base_year": "BaseYear",
+        "tax_rate_area": "TaxRateArea",
+        "exemption": "Exemption",
+        "corner_lot": "CornerLot",
+        "latitude": "Latitude",
+        "longitude": "Longitude"
+      },
+      "cities_served": [
+        "Los Angeles", "Altadena", "Pasadena", "Glendale", "Burbank",
+        "Long Beach", "Santa Monica", "Culver City", "Inglewood",
+        "Torrance", "Pomona", "West Hollywood", "Malibu", "Arcadia",
+        "Monrovia", "Alhambra", "South Pasadena", "Sierra Madre",
+        "La Canada Flintridge", "San Dimas", "Claremont", "Whittier",
+        "Downey", "Norwalk", "Compton", "Carson", "Hawthorne",
+        "Redondo Beach", "Manhattan Beach", "Hermosa Beach",
+        "Beverly Hills", "Santa Clarita", "Palmdale", "Lancaster",
+        "Pacific Palisades", "Brentwood", "Encino", "Sherman Oaks",
+        "Studio City", "Tarzana", "Woodland Hills", "Calabasas",
+        "West Hills", "Chatsworth", "Northridge", "Granada Hills",
+        "Sylmar", "Sun Valley", "North Hollywood", "Van Nuys",
+        "Reseda", "Canoga Park", "Winnetka", "Lake Balboa",
+        "Echo Park", "Silver Lake", "Los Feliz", "Highland Park",
+        "Eagle Rock", "Glassell Park", "Atwater Village", "Boyle Heights",
+        "El Sereno", "Lincoln Heights", "Cypress Park", "Mount Washington",
+        "Venice", "Mar Vista", "Playa Del Rey", "Westchester",
+        "San Pedro", "Wilmington", "Harbor City", "Watts"
+      ],
+      "last_verified": "2026-02-24"
+    },
+    "orange_county": {
+      "county": "Orange",
+      "state": "CA",
+      "assessor_name": "Orange County Assessor",
+      "base_url": "https://www.ocgov.com/gov/assessor",
+      "search_url": "https://parcels.ocgov.com/civicamap",
+      "search_method": "web_search",
+      "search_query_pattern": "\"{full_address}\" orange county assessor parcel",
+      "field_mappings": {
+        "parcel_number": "APN",
+        "lot_area": "Lot Size",
+        "building_area": "Living Area",
+        "year_built": "Year Built",
+        "assessed_value": "Total Assessed Value"
+      },
+      "cities_served": [
+        "Anaheim", "Santa Ana", "Irvine", "Huntington Beach",
+        "Garden Grove", "Orange", "Fullerton", "Costa Mesa",
+        "Mission Viejo", "Newport Beach", "Lake Forest", "Tustin",
+        "Laguna Beach", "Laguna Niguel", "San Clemente", "Dana Point",
+        "Yorba Linda", "Brea", "Placentia", "La Habra"
+      ],
+      "last_verified": "2026-02-24"
+    },
+    "san_bernardino_county": {
+      "county": "San Bernardino",
+      "state": "CA",
+      "assessor_name": "San Bernardino County Assessor-Recorder-Clerk",
+      "base_url": "https://www.sbcounty.gov/assessor",
+      "search_url": "https://arcgis.sbcounty.gov/arcgis/apps/webappviewer/index.html",
+      "search_method": "web_search",
+      "search_query_pattern": "\"{full_address}\" san bernardino county assessor parcel",
+      "field_mappings": {
+        "parcel_number": "APN",
+        "lot_area": "Lot Size",
+        "building_area": "Square Footage"
+      },
+      "cities_served": [
+        "San Bernardino", "Ontario", "Rancho Cucamonga", "Fontana",
+        "Rialto", "Upland", "Redlands", "Chino", "Chino Hills"
+      ],
+      "last_verified": "2026-02-24"
+    },
+    "riverside_county": {
+      "county": "Riverside",
+      "state": "CA",
+      "assessor_name": "Riverside County Assessor-County Clerk-Recorder",
+      "base_url": "https://www.rivcoassessor.org",
+      "search_url": "https://www.rivcoassessor.org/assessment-search",
+      "search_method": "web_search",
+      "search_query_pattern": "\"{full_address}\" riverside county assessor parcel",
+      "field_mappings": {
+        "parcel_number": "APN",
+        "lot_area": "Lot Size",
+        "building_area": "Living Area"
+      },
+      "cities_served": [
+        "Riverside", "Moreno Valley", "Corona", "Temecula", "Murrieta",
+        "Palm Springs", "Palm Desert", "Indio", "Hemet", "Lake Elsinore"
+      ],
+      "last_verified": "2026-02-24"
+    },
+    "san_diego_county": {
+      "county": "San Diego",
+      "state": "CA",
+      "assessor_name": "San Diego County Assessor/Recorder/County Clerk",
+      "base_url": "https://arcc.sdcounty.ca.gov",
+      "search_url": "https://arcc.sdcounty.ca.gov/Pages/Assessor-Property-Information.aspx",
+      "search_method": "web_search",
+      "search_query_pattern": "\"{full_address}\" san diego county assessor parcel",
+      "field_mappings": {
+        "parcel_number": "APN",
+        "lot_area": "Land Area",
+        "building_area": "Living Area",
+        "legal_description": "Legal Description"
+      },
+      "cities_served": [
+        "San Diego", "Chula Vista", "Oceanside", "Escondido",
+        "Carlsbad", "El Cajon", "Vista", "San Marcos", "Encinitas",
+        "La Mesa", "Poway", "National City"
+      ],
+      "last_verified": "2026-02-24"
+    },
+    "cook_county_il": {
+      "county": "Cook",
+      "state": "IL",
+      "assessor_name": "Cook County Assessor's Office",
+      "base_url": "https://www.cookcountyassessor.com",
+      "search_url": "https://www.cookcountyassessor.com/address-search",
+      "search_method": "web_fetch",
+      "search_url_pattern": "https://www.cookcountyassessor.com/address-search#address={street_number}%20{street_name}&municipality={city}",
+      "alt_search_query": "\"{full_address}\" cook county assessor PIN",
+      "field_mappings": {
+        "parcel_number": "PIN",
+        "lot_area": "Land Square Footage",
+        "building_area": "Building Square Footage",
+        "legal_description": "Legal Description",
+        "year_built": "Age",
+        "zoning": "Property Classification",
+        "assessed_value": "Total Assessed Value",
+        "owner": "Taxpayer"
+      },
+      "cities_served": [
+        "Chicago", "Evanston", "Skokie", "Oak Park", "Cicero",
+        "Berwyn", "Oak Lawn", "Orland Park", "Tinley Park",
+        "Schaumburg", "Arlington Heights", "Des Plaines", "Park Ridge"
+      ],
+      "last_verified": "2026-02-24"
+    },
+    "harris_county_tx": {
+      "county": "Harris",
+      "state": "TX",
+      "assessor_name": "Harris County Appraisal District (HCAD)",
+      "base_url": "https://hcad.org",
+      "search_url": "https://public.hcad.org/records/Real.asp",
+      "search_method": "web_search",
+      "search_query_pattern": "site:public.hcad.org \"{street_number} {street_name}\"",
+      "alt_search_query": "\"{full_address}\" HCAD property search",
+      "field_mappings": {
+        "parcel_number": "Account Number",
+        "lot_area": "Land Area",
+        "building_area": "Building Area",
+        "legal_description": "Legal Description",
+        "year_built": "Year Built",
+        "assessed_value": "Total Appraised Value",
+        "owner": "Owner Name"
+      },
+      "cities_served": [
+        "Houston", "Pasadena", "Baytown", "Sugar Land", "Pearland",
+        "League City", "Missouri City", "Katy", "Spring", "Humble",
+        "Cypress", "Tomball", "Bellaire", "West University Place"
+      ],
+      "last_verified": "2026-02-24"
+    },
+    "maricopa_county_az": {
+      "county": "Maricopa",
+      "state": "AZ",
+      "assessor_name": "Maricopa County Assessor's Office",
+      "base_url": "https://mcassessor.maricopa.gov",
+      "search_url": "https://mcassessor.maricopa.gov/mcs.php",
+      "search_method": "web_search",
+      "search_query_pattern": "site:mcassessor.maricopa.gov \"{street_number} {street_name}\"",
+      "alt_search_query": "\"{full_address}\" maricopa county assessor parcel",
+      "field_mappings": {
+        "parcel_number": "APN",
+        "lot_area": "Lot Size",
+        "building_area": "Living Area",
+        "year_built": "Year Built",
+        "assessed_value": "Full Cash Value",
+        "owner": "Owner of Record"
+      },
+      "cities_served": [
+        "Phoenix", "Mesa", "Chandler", "Scottsdale", "Gilbert",
+        "Glendale", "Tempe", "Peoria", "Surprise", "Goodyear",
+        "Avondale", "Buckeye", "Cave Creek", "Fountain Hills"
+      ],
+      "last_verified": "2026-02-24"
+    },
+    "miami_dade_county_fl": {
+      "county": "Miami-Dade",
+      "state": "FL",
+      "assessor_name": "Miami-Dade County Property Appraiser",
+      "base_url": "https://www.miamidade.gov/pa",
+      "search_url": "https://www.miamidade.gov/pa/PropertySearch.asp",
+      "search_method": "web_search",
+      "search_query_pattern": "site:miamidade.gov/pa \"{street_number} {street_name}\"",
+      "alt_search_query": "\"{full_address}\" miami-dade property appraiser folio",
+      "field_mappings": {
+        "parcel_number": "Folio Number",
+        "lot_area": "Lot Size",
+        "building_area": "Adjusted Sq Ft",
+        "legal_description": "Legal Description",
+        "year_built": "Year Built",
+        "zoning": "Zoning",
+        "assessed_value": "Assessed Value",
+        "owner": "Owner"
+      },
+      "cities_served": [
+        "Miami", "Miami Beach", "Hialeah", "Coral Gables",
+        "Homestead", "North Miami", "Doral", "Aventura",
+        "Key Biscayne", "Pinecrest", "Coconut Grove"
+      ],
+      "last_verified": "2026-02-24"
+    },
+    "king_county_wa": {
+      "county": "King",
+      "state": "WA",
+      "assessor_name": "King County Assessor",
+      "base_url": "https://blue.kingcounty.com/Assessor/eRealProperty",
+      "search_url": "https://blue.kingcounty.com/Assessor/eRealProperty/Dashboard.aspx",
+      "search_method": "web_search",
+      "search_query_pattern": "site:blue.kingcounty.com \"{street_number} {street_name}\"",
+      "alt_search_query": "\"{full_address}\" king county assessor parcel",
+      "field_mappings": {
+        "parcel_number": "Parcel Number",
+        "lot_area": "Lot Sq Ft",
+        "building_area": "Total Sq Ft",
+        "legal_description": "Legal Description",
+        "year_built": "Year Built",
+        "zoning": "Zoning",
+        "assessed_value": "Appraised Total"
+      },
+      "cities_served": [
+        "Seattle", "Bellevue", "Kent", "Renton", "Federal Way",
+        "Kirkland", "Redmond", "Sammamish", "Issaquah", "Mercer Island",
+        "Burien", "Tukwila", "SeaTac", "Shoreline", "Woodinville"
+      ],
+      "last_verified": "2026-02-24"
+    },
+    "new_york_city": {
+      "county": "New York City (all boroughs)",
+      "state": "NY",
+      "assessor_name": "NYC Department of Finance",
+      "base_url": "https://a836-pts-access.nyc.gov/care/search/commonsearch.aspx?mode=address",
+      "portal_url": "https://a836-pts-access.nyc.gov/care/search/commonsearch.aspx?mode=address",
+      "api": {
+        "search_endpoint": "https://data.cityofnewyork.us/resource/64uk-42ks.json?$where=address='{address}'%20AND%20borough='{borough_code}'&$limit=5",
+        "method": "web_fetch",
+        "response_format": "JSON",
+        "dataset": "PLUTO (Primary Land Use Tax Lot Output)",
+        "resource_id": "64uk-42ks",
+        "borough_codes": {
+          "Manhattan": "MN",
+          "Brooklyn": "BK",
+          "Queens": "QN",
+          "Bronx": "BX",
+          "Staten Island": "SI"
+        },
+        "notes": "Use NYC Open Data PLUTO API. Address must be UPPERCASE. Borough code is required. Returns comprehensive property data including BBL, lot area, building area, zoning, year built, assessed values, units, stories, historic districts, and special districts. For condos, lot numbers 7501+ are condo-specific lots."
+      },
+      "search_method": "api",
+      "search_workflow": [
+        "1. Convert address to UPPERCASE (e.g., '143 GREENE STREET')",
+        "2. Determine borough code: MN, BK, QN, BX, or SI",
+        "3. web_fetch the PLUTO API endpoint with address and borough_code",
+        "4. Parse JSON response — first result is typically the correct match",
+        "5. Extract all property fields from the PLUTO record"
+      ],
+      "field_mappings": {
+        "parcel_number": "bbl (Borough-Block-Lot)",
+        "block": "block",
+        "lot": "lot",
+        "lot_area": "lotarea (sq ft)",
+        "lot_frontage": "lotfront (ft)",
+        "lot_depth": "lotdepth (ft)",
+        "building_area": "bldgarea (sq ft)",
+        "residential_area": "resarea (sq ft)",
+        "commercial_area": "comarea (sq ft)",
+        "stories": "numfloors",
+        "num_buildings": "numbldgs",
+        "residential_units": "unitsres",
+        "total_units": "unitstotal",
+        "year_built": "yearbuilt",
+        "building_class": "bldgclass",
+        "land_use": "landuse",
+        "zoning": "zonedist1",
+        "special_district": "spdist1",
+        "historic_district": "histdist",
+        "assessed_land": "assessland",
+        "assessed_total": "assesstot",
+        "condo_number": "condono",
+        "owner": "ownername",
+        "zip_code": "zipcode",
+        "community_district": "cd",
+        "latitude": "latitude",
+        "longitude": "longitude"
+      },
+      "cities_served": [
+        "New York", "Manhattan", "Brooklyn", "Queens", "Bronx", "Staten Island",
+        "Harlem", "SoHo", "Tribeca", "Greenwich Village", "Chelsea",
+        "Midtown", "Upper East Side", "Upper West Side", "Lower East Side",
+        "East Village", "West Village", "Williamsburg", "DUMBO",
+        "Park Slope", "Brooklyn Heights", "Astoria", "Long Island City",
+        "Flushing", "Jamaica", "Riverdale", "Fordham"
+      ],
+      "last_verified": "2026-02-24"
+    },
+    "washington_county_ar": {
+      "county": "Washington",
+      "state": "AR",
+      "assessor_name": "Washington County Assessor",
+      "base_url": "https://www.prior-co.washington.ar.us",
+      "search_url": "https://www.arcountydata.com/ppquery.asp?county=Washington",
+      "search_method": "web_search",
+      "search_query_pattern": "\"{full_address}\" washington county arkansas assessor parcel",
+      "field_mappings": {
+        "parcel_number": "Parcel ID",
+        "lot_area": "Acreage",
+        "building_area": "Sq Ft",
+        "assessed_value": "Assessed Value"
+      },
+      "cities_served": [
+        "Fayetteville", "Springdale", "Johnson", "Farmington",
+        "Prairie Grove", "Lincoln", "West Fork", "Elkins", "Tontitown"
+      ],
+      "last_verified": "2026-02-24"
+    }
+  }
+}

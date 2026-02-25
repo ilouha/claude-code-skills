@@ -1,0 +1,611 @@
+{
+  "data_vintage": "2025-Q1",
+  "currency": "USD",
+  "notes": "Base costs are national averages before regional adjustment. Apply the regional multiplier to get location-adjusted cost/SF. All costs are hard costs only — add soft costs separately.",
+
+  "regions": {
+    "northeast": {
+      "default_multiplier": 1.20,
+      "metros": {
+        "new_york_city":      { "multiplier": 1.55, "notes": "Manhattan/Brooklyn premium; outer boroughs ~1.35" },
+        "boston":              { "multiplier": 1.35 },
+        "philadelphia":       { "multiplier": 1.15 },
+        "pittsburgh":         { "multiplier": 1.05 },
+        "hartford":           { "multiplier": 1.18 },
+        "newark":             { "multiplier": 1.30 },
+        "providence":         { "multiplier": 1.12 },
+        "albany":             { "multiplier": 1.08 },
+        "washington_dc":      { "multiplier": 1.25 }
+      }
+    },
+    "southeast": {
+      "default_multiplier": 0.92,
+      "metros": {
+        "miami":              { "multiplier": 1.10, "notes": "Hurricane code + labor market pressure" },
+        "atlanta":            { "multiplier": 0.95 },
+        "charlotte":          { "multiplier": 0.92 },
+        "raleigh":            { "multiplier": 0.93 },
+        "tampa":              { "multiplier": 0.98 },
+        "orlando":            { "multiplier": 0.95 },
+        "nashville":          { "multiplier": 0.97 },
+        "jacksonville":       { "multiplier": 0.90 },
+        "richmond":           { "multiplier": 0.95 },
+        "birmingham":         { "multiplier": 0.85 },
+        "memphis":            { "multiplier": 0.84 },
+        "new_orleans":        { "multiplier": 0.93 },
+        "charleston":         { "multiplier": 0.95 }
+      }
+    },
+    "midwest": {
+      "default_multiplier": 0.95,
+      "metros": {
+        "chicago":            { "multiplier": 1.15, "notes": "Union labor market" },
+        "minneapolis":        { "multiplier": 1.05 },
+        "detroit":            { "multiplier": 1.02 },
+        "cleveland":          { "multiplier": 0.98 },
+        "columbus":           { "multiplier": 0.95 },
+        "indianapolis":       { "multiplier": 0.92 },
+        "milwaukee":          { "multiplier": 1.02 },
+        "kansas_city":        { "multiplier": 0.88 },
+        "st_louis":           { "multiplier": 0.95 },
+        "cincinnati":         { "multiplier": 0.93 },
+        "omaha":              { "multiplier": 0.88 }
+      }
+    },
+    "southwest": {
+      "default_multiplier": 0.90,
+      "metros": {
+        "dallas_fort_worth":  { "multiplier": 0.92 },
+        "houston":            { "multiplier": 0.90 },
+        "san_antonio":        { "multiplier": 0.85 },
+        "austin":             { "multiplier": 0.97 },
+        "phoenix":            { "multiplier": 0.95 },
+        "tucson":             { "multiplier": 0.88 },
+        "las_vegas":          { "multiplier": 0.98 },
+        "albuquerque":        { "multiplier": 0.88 },
+        "el_paso":            { "multiplier": 0.82 },
+        "oklahoma_city":      { "multiplier": 0.83 },
+        "tulsa":              { "multiplier": 0.82 }
+      }
+    },
+    "west_coast": {
+      "default_multiplier": 1.25,
+      "metros": {
+        "san_francisco":      { "multiplier": 1.50, "notes": "Bay Area premium; South Bay/East Bay ~1.35-1.40" },
+        "los_angeles":        { "multiplier": 1.30, "notes": "Westside/Beverly Hills can reach 1.45+" },
+        "san_diego":          { "multiplier": 1.20 },
+        "seattle":            { "multiplier": 1.25 },
+        "portland":           { "multiplier": 1.15 },
+        "sacramento":         { "multiplier": 1.15 },
+        "san_jose":           { "multiplier": 1.42 },
+        "riverside":          { "multiplier": 1.08 },
+        "fresno":             { "multiplier": 1.02 }
+      }
+    },
+    "mountain_west": {
+      "default_multiplier": 0.98,
+      "metros": {
+        "denver":             { "multiplier": 1.05 },
+        "salt_lake_city":     { "multiplier": 0.95 },
+        "boise":              { "multiplier": 0.92 },
+        "colorado_springs":   { "multiplier": 0.98 },
+        "reno":               { "multiplier": 1.05 },
+        "billings":           { "multiplier": 0.95 }
+      }
+    },
+    "hawaii_alaska": {
+      "default_multiplier": 1.40,
+      "metros": {
+        "honolulu":           { "multiplier": 1.45, "notes": "Island shipping premiums; neighbor islands +5-10%" },
+        "anchorage":          { "multiplier": 1.35, "notes": "Seasonal construction window adds cost" },
+        "fairbanks":          { "multiplier": 1.42 }
+      }
+    }
+  },
+
+  "state_to_region": {
+    "CT": "northeast", "DE": "northeast", "MA": "northeast", "MD": "northeast",
+    "ME": "northeast", "NH": "northeast", "NJ": "northeast", "NY": "northeast",
+    "PA": "northeast", "RI": "northeast", "VT": "northeast", "DC": "northeast",
+    "AL": "southeast", "AR": "southeast", "FL": "southeast", "GA": "southeast",
+    "KY": "southeast", "LA": "southeast", "MS": "southeast", "NC": "southeast",
+    "SC": "southeast", "TN": "southeast", "VA": "southeast", "WV": "southeast",
+    "IA": "midwest", "IL": "midwest", "IN": "midwest", "KS": "midwest",
+    "MI": "midwest", "MN": "midwest", "MO": "midwest", "ND": "midwest",
+    "NE": "midwest", "OH": "midwest", "SD": "midwest", "WI": "midwest",
+    "AZ": "southwest", "NM": "southwest", "NV": "southwest", "OK": "southwest",
+    "TX": "southwest",
+    "CA": "west_coast", "OR": "west_coast", "WA": "west_coast",
+    "CO": "mountain_west", "ID": "mountain_west", "MT": "mountain_west",
+    "UT": "mountain_west", "WY": "mountain_west",
+    "AK": "hawaii_alaska", "HI": "hawaii_alaska"
+  },
+
+  "project_types": {
+    "residential": {
+      "production_homes": {
+        "description": "Tract/production single-family homes",
+        "unit": "$/SF",
+        "low": 130,
+        "mid": 175,
+        "high": 225,
+        "notes": "Volume builder pricing; assumes standard finishes"
+      },
+      "custom_homes": {
+        "description": "Custom single-family homes, architect-designed",
+        "unit": "$/SF",
+        "low": 200,
+        "mid": 325,
+        "high": 500,
+        "notes": "Wide range depending on finishes and complexity"
+      },
+      "luxury_homes": {
+        "description": "High-end custom residences",
+        "unit": "$/SF",
+        "low": 450,
+        "mid": 650,
+        "high": 1000,
+        "notes": "Can exceed $1,000/SF in premium markets with ultra-luxury finishes"
+      },
+      "adu_detached": {
+        "description": "Detached accessory dwelling unit, new construction",
+        "unit": "$/SF",
+        "low": 250,
+        "mid": 350,
+        "high": 500,
+        "notes": "Small footprint drives up per-SF cost; utility connections add $15-30K"
+      },
+      "adu_attached_conversion": {
+        "description": "Garage conversion or attached ADU",
+        "unit": "$/SF",
+        "low": 150,
+        "mid": 225,
+        "high": 350,
+        "notes": "Lower cost if existing structure is sound; seismic/code upgrades can add 20%"
+      },
+      "additions": {
+        "description": "Room additions to existing homes",
+        "unit": "$/SF",
+        "low": 200,
+        "mid": 300,
+        "high": 450,
+        "notes": "Tying into existing structure adds complexity; second-story additions at high end"
+      },
+      "renovations_major": {
+        "description": "Gut renovation of existing home",
+        "unit": "$/SF",
+        "low": 150,
+        "mid": 250,
+        "high": 400,
+        "notes": "15-20% contingency recommended; can approach new construction cost"
+      },
+      "renovations_cosmetic": {
+        "description": "Cosmetic renovation — finishes, fixtures, paint",
+        "unit": "$/SF",
+        "low": 50,
+        "mid": 100,
+        "high": 175,
+        "notes": "No structural or MEP changes"
+      },
+      "kitchen_remodel": {
+        "description": "Kitchen remodel (mid to high grade)",
+        "unit": "$/SF of kitchen",
+        "low": 150,
+        "mid": 275,
+        "high": 450,
+        "notes": "Typical kitchen 100-200 SF; gut kitchen remodel $30K-$90K+ range"
+      },
+      "bathroom_remodel": {
+        "description": "Bathroom remodel (mid to high grade)",
+        "unit": "$/SF of bathroom",
+        "low": 200,
+        "mid": 400,
+        "high": 700,
+        "notes": "Typical full bath 40-60 SF; $12K-$40K+ range"
+      }
+    },
+
+    "multifamily": {
+      "garden_style": {
+        "description": "2-3 story walk-up apartments, wood frame",
+        "unit": "$/SF",
+        "low": 150,
+        "mid": 210,
+        "high": 285,
+        "notes": "Type V-A construction; most cost-efficient multifamily"
+      },
+      "mid_rise": {
+        "description": "4-7 story apartments, podium or steel/concrete",
+        "unit": "$/SF",
+        "low": 225,
+        "mid": 310,
+        "high": 425,
+        "notes": "Type III-A or Type I-A podium; structured parking adds significant cost"
+      },
+      "high_rise": {
+        "description": "8+ story residential tower",
+        "unit": "$/SF",
+        "low": 350,
+        "mid": 475,
+        "high": 650,
+        "notes": "Type I-A concrete/steel; elevator and life safety systems drive cost"
+      },
+      "townhomes": {
+        "description": "Attached townhome/rowhome product",
+        "unit": "$/SF",
+        "low": 140,
+        "mid": 195,
+        "high": 275,
+        "notes": "Shared walls reduce envelope cost; similar to production homes"
+      },
+      "senior_living": {
+        "description": "Senior independent/assisted living facility",
+        "unit": "$/SF",
+        "low": 200,
+        "mid": 300,
+        "high": 425,
+        "notes": "ADA requirements, nurse call systems, commercial kitchen add cost"
+      },
+      "student_housing": {
+        "description": "Purpose-built student housing",
+        "unit": "$/SF",
+        "low": 175,
+        "mid": 250,
+        "high": 350,
+        "notes": "High unit count, durable finishes, amenity-heavy"
+      }
+    },
+
+    "office": {
+      "spec_office": {
+        "description": "Speculative office shell, Class B",
+        "unit": "$/SF",
+        "low": 175,
+        "mid": 250,
+        "high": 350,
+        "notes": "Shell and core; TI by tenant"
+      },
+      "class_a_office": {
+        "description": "Class A office, full build-out",
+        "unit": "$/SF",
+        "low": 250,
+        "mid": 375,
+        "high": 525,
+        "notes": "High-performance envelope, premium MEP, lobby finishes"
+      },
+      "tenant_improvement": {
+        "description": "Office tenant improvement / fit-out",
+        "unit": "$/SF",
+        "low": 50,
+        "mid": 100,
+        "high": 200,
+        "notes": "Varies wildly — open plan at low end, trading floors/law firms at high end"
+      },
+      "medical_office": {
+        "description": "Medical office building",
+        "unit": "$/SF",
+        "low": 275,
+        "mid": 400,
+        "high": 550,
+        "notes": "Specialized MEP, shielding, medical gas, heavier structural loads"
+      },
+      "coworking": {
+        "description": "Coworking/flexible office space fit-out",
+        "unit": "$/SF",
+        "low": 75,
+        "mid": 130,
+        "high": 200,
+        "notes": "Heavy on furniture/AV; phone booths, kitchens, event spaces"
+      }
+    },
+
+    "retail": {
+      "strip_mall": {
+        "description": "Strip retail / neighborhood center",
+        "unit": "$/SF",
+        "low": 125,
+        "mid": 185,
+        "high": 260,
+        "notes": "Shell delivery; tenant does interior"
+      },
+      "big_box": {
+        "description": "Big box retail / warehouse retail",
+        "unit": "$/SF",
+        "low": 85,
+        "mid": 130,
+        "high": 185,
+        "notes": "Simple tilt-up or steel structure; high volume, low finish"
+      },
+      "boutique_retail": {
+        "description": "Boutique / specialty retail fit-out",
+        "unit": "$/SF",
+        "low": 100,
+        "mid": 175,
+        "high": 300,
+        "notes": "Varies by brand standards and finish level"
+      },
+      "restaurant_casual": {
+        "description": "Casual dining restaurant",
+        "unit": "$/SF",
+        "low": 200,
+        "mid": 325,
+        "high": 475,
+        "notes": "Commercial kitchen, grease traps, hood systems, heavier MEP"
+      },
+      "restaurant_fine_dining": {
+        "description": "Fine dining restaurant",
+        "unit": "$/SF",
+        "low": 350,
+        "mid": 500,
+        "high": 750,
+        "notes": "Premium finishes, specialty kitchen equipment, acoustic treatment, wine storage"
+      },
+      "grocery": {
+        "description": "Grocery store / supermarket",
+        "unit": "$/SF",
+        "low": 150,
+        "mid": 225,
+        "high": 325,
+        "notes": "Refrigeration systems, heavy floor loads, commercial kitchen/bakery"
+      }
+    },
+
+    "industrial": {
+      "warehouse_distribution": {
+        "description": "Warehouse / distribution center",
+        "unit": "$/SF",
+        "low": 65,
+        "mid": 100,
+        "high": 150,
+        "notes": "Tilt-up or pre-engineered metal; clear height 32-40ft"
+      },
+      "light_manufacturing": {
+        "description": "Light manufacturing / assembly facility",
+        "unit": "$/SF",
+        "low": 100,
+        "mid": 150,
+        "high": 225,
+        "notes": "Heavier power, compressed air, overhead cranes add cost"
+      },
+      "cold_storage": {
+        "description": "Cold storage / refrigerated warehouse",
+        "unit": "$/SF",
+        "low": 175,
+        "mid": 250,
+        "high": 375,
+        "notes": "Insulated panels, refrigeration plant, vapor barriers; freezer more than cooler"
+      },
+      "flex_space": {
+        "description": "Flex industrial — office/warehouse hybrid",
+        "unit": "$/SF",
+        "low": 100,
+        "mid": 155,
+        "high": 225,
+        "notes": "Typically 20-40% office, balance warehouse"
+      },
+      "self_storage": {
+        "description": "Self-storage facility",
+        "unit": "$/SF",
+        "low": 45,
+        "mid": 70,
+        "high": 110,
+        "notes": "Climate-controlled at high end; multi-story drives up cost"
+      }
+    },
+
+    "hospitality": {
+      "budget_hotel": {
+        "description": "Budget / economy hotel (e.g., Motel 6, Super 8)",
+        "unit": "$/SF",
+        "low": 130,
+        "mid": 185,
+        "high": 250,
+        "notes": "Typically 250-325 SF/key"
+      },
+      "midscale_hotel": {
+        "description": "Mid-scale select-service hotel (e.g., Hampton, Fairfield)",
+        "unit": "$/SF",
+        "low": 200,
+        "mid": 285,
+        "high": 375,
+        "notes": "Typically 350-400 SF/key; includes breakfast area, fitness, pool"
+      },
+      "full_service_hotel": {
+        "description": "Full-service hotel (e.g., Marriott, Hilton)",
+        "unit": "$/SF",
+        "low": 300,
+        "mid": 425,
+        "high": 575,
+        "notes": "Typically 450-550 SF/key; F&B, meeting space, back-of-house"
+      },
+      "luxury_resort": {
+        "description": "Luxury hotel / resort",
+        "unit": "$/SF",
+        "low": 500,
+        "mid": 700,
+        "high": 1000,
+        "notes": "600+ SF/key; spa, multiple F&B, extensive site work and landscaping"
+      }
+    },
+
+    "institutional": {
+      "k12_school": {
+        "description": "K-12 school (elementary, middle, or high school)",
+        "unit": "$/SF",
+        "low": 250,
+        "mid": 375,
+        "high": 525,
+        "notes": "Varies by grade level — high schools with labs/gyms/auditoriums at high end"
+      },
+      "higher_education": {
+        "description": "College/university academic building",
+        "unit": "$/SF",
+        "low": 325,
+        "mid": 475,
+        "high": 650,
+        "notes": "Labs, lecture halls, and research facilities push costs higher"
+      },
+      "hospital": {
+        "description": "Acute care hospital",
+        "unit": "$/SF",
+        "low": 450,
+        "mid": 650,
+        "high": 900,
+        "notes": "Most expensive building type — MEP-intensive, redundant systems, seismic requirements"
+      },
+      "outpatient_clinic": {
+        "description": "Outpatient clinic / urgent care",
+        "unit": "$/SF",
+        "low": 225,
+        "mid": 350,
+        "high": 500,
+        "notes": "Less intensive than hospital; still requires medical-grade MEP"
+      },
+      "fire_station": {
+        "description": "Fire station",
+        "unit": "$/SF",
+        "low": 275,
+        "mid": 400,
+        "high": 550,
+        "notes": "Apparatus bay, living quarters, training areas; seismic/essential facility requirements"
+      },
+      "library": {
+        "description": "Public library",
+        "unit": "$/SF",
+        "low": 275,
+        "mid": 400,
+        "high": 575,
+        "notes": "Heavy floor loads for stacks, quiet HVAC, technology infrastructure"
+      },
+      "church_worship": {
+        "description": "Church / house of worship",
+        "unit": "$/SF",
+        "low": 175,
+        "mid": 275,
+        "high": 425,
+        "notes": "Sanctuary acoustics, large clear-span structure, AV systems"
+      }
+    },
+
+    "mixed_use": {
+      "mixed_use_urban": {
+        "description": "Mixed-use urban — retail ground floor + residential/office above",
+        "unit": "$/SF",
+        "low": 225,
+        "mid": 325,
+        "high": 475,
+        "notes": "Blended rate; estimate each use separately for better accuracy"
+      }
+    },
+
+    "parking": {
+      "surface_parking": {
+        "description": "Surface parking lot",
+        "unit": "$/space",
+        "low": 5000,
+        "mid": 8000,
+        "high": 12000,
+        "notes": "Grading, paving, striping, lighting, drainage"
+      },
+      "parking_structure": {
+        "description": "Above-grade parking structure",
+        "unit": "$/SF",
+        "low": 55,
+        "mid": 80,
+        "high": 115,
+        "notes": "~350 SF/space; $19K-$40K per space"
+      },
+      "underground_parking": {
+        "description": "Below-grade parking structure",
+        "unit": "$/SF",
+        "low": 95,
+        "mid": 140,
+        "high": 200,
+        "notes": "~375 SF/space; $36K-$75K per space; excavation and waterproofing drive cost"
+      }
+    },
+
+    "site_work": {
+      "site_development": {
+        "description": "General site work — grading, utilities, paving, landscaping",
+        "unit": "$/SF of site",
+        "low": 10,
+        "mid": 20,
+        "high": 40,
+        "notes": "Highly variable — depends on topo, soil, utility availability, environmental"
+      }
+    }
+  },
+
+  "soft_costs": {
+    "description": "Soft costs as a percentage of hard construction costs",
+    "categories": {
+      "architect_engineer": {
+        "label": "Architect & Engineering Fees",
+        "low_pct": 5.0,
+        "mid_pct": 8.0,
+        "high_pct": 12.0,
+        "notes": "5-7% for simple/large; 8-10% for custom/mid; 10-12% for complex/institutional. Includes structural, MEP, civil engineering."
+      },
+      "permitting_fees": {
+        "label": "Permitting & Impact Fees",
+        "low_pct": 1.0,
+        "mid_pct": 3.0,
+        "high_pct": 5.0,
+        "notes": "Varies enormously by jurisdiction. California, NYC, Hawaii at high end. Includes plan check, building permit, school impact fees, utility connection fees."
+      },
+      "contingency": {
+        "label": "Contingency",
+        "low_pct": 5.0,
+        "mid_pct": 10.0,
+        "high_pct": 20.0,
+        "notes": "5% for well-defined new construction, 10% standard, 15-20% for renovations or early-stage estimates."
+      },
+      "financing": {
+        "label": "Construction Financing / Carry Costs",
+        "low_pct": 2.0,
+        "mid_pct": 4.0,
+        "high_pct": 7.0,
+        "notes": "Interest carry during construction; longer projects = higher cost. Includes origination fees and interest reserve."
+      },
+      "developer_fee": {
+        "label": "Developer Fee / Overhead",
+        "low_pct": 3.0,
+        "mid_pct": 4.0,
+        "high_pct": 5.0,
+        "notes": "Common in commercial/multifamily projects. Owner-builder projects may not include this."
+      },
+      "legal_insurance": {
+        "label": "Legal, Insurance & Accounting",
+        "low_pct": 1.0,
+        "mid_pct": 2.0,
+        "high_pct": 3.0,
+        "notes": "Builder's risk, general liability, legal review, title, accounting"
+      },
+      "testing_inspections": {
+        "label": "Testing & Special Inspections",
+        "low_pct": 0.5,
+        "mid_pct": 1.0,
+        "high_pct": 2.0,
+        "notes": "Soils, concrete, steel, special inspections required by code. Higher for institutional/seismic."
+      }
+    },
+    "typical_total_range": {
+      "simple_project": "25-30% of hard costs",
+      "standard_project": "30-35% of hard costs",
+      "complex_project": "35-45% of hard costs"
+    }
+  },
+
+  "escalation": {
+    "description": "Annual construction cost escalation rates (2025 outlook)",
+    "national_average_pct": 4.5,
+    "high_growth_markets_pct": 6.0,
+    "stable_markets_pct": 3.0,
+    "high_growth_metros": [
+      "austin", "nashville", "phoenix", "raleigh", "boise", "tampa",
+      "dallas_fort_worth", "denver", "charlotte", "salt_lake_city"
+    ],
+    "notes": "Apply escalation to mid-point of construction for future projects. E.g., a project starting in 12 months with 18-month duration: escalate to month 21 (midpoint)."
+  }
+}

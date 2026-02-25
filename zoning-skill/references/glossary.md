@@ -1,0 +1,22 @@
+# Zoning Terminology Glossary
+
+- **ADU (Accessory Dwelling Unit)**: Secondary housing unit on a single-family lot (granny flat, in-law unit, casita).
+- **By Right**: Permitted without discretionary approval. Also "as-of-right."
+- **CUP (Conditional Use Permit)**: Permit for a use not normally allowed by right, requires hearing.
+- **Density**: Dwelling units allowed per unit of land area.
+- **FAR (Floor Area Ratio)**: Ratio of building floor area to lot area. FAR 2.0 on a 5,000 sq ft lot = 10,000 sq ft building.
+- **Height District**: Overlay setting max building height, independent of base zone.
+- **JADU (Junior ADU)**: Smaller ADU (max 500 sq ft in CA) from converting existing space.
+- **Lot Coverage**: Percentage of lot covered by buildings.
+- **Ministerial Approval**: Approval based on objective standards — no discretion.
+- **Mixed-Use**: Residential + commercial in the same building or district.
+- **Nonconforming Use**: Legal use that no longer complies with current zoning ("grandfathered").
+- **Overlay Zone**: Additional zoning layer on top of base zone.
+- **Permitted Use**: Allowed by right in a zone.
+- **PD/PUD (Planned Development)**: Custom zoning for a specific project.
+- **Setback**: Minimum distance from lot line to building. Front, side, and rear specified separately.
+- **Specific Plan**: Detailed development plan for a defined geographic area.
+- **Spot Zoning**: Rezoning a single parcel differently from surroundings — generally disfavored.
+- **Variance**: Exception to zoning rule granted for hardship.
+- **Upzoning**: Changing zone to allow more density. Opposite: downzoning.
+- **VHFHSZ**: Very High Fire Hazard Severity Zone (important in CA for SB 9/ADU eligibility).

@@ -1,0 +1,844 @@
+{
+  "flag_definitions": {
+    "historic_district":      "One or more properties in this jurisdiction may fall within a designated historic or landmark district. Historic/Landmarks Commission approval is required before building permits are issued. Adds 3–12 months to the timeline — verify with the local planning department before submitting.",
+    "coastal":                "Project may fall within the California Coastal Zone. A Coastal Development Permit (CDP) from the California Coastal Commission is required in addition to local building permits. Verify parcel status at coastal.ca.gov/mycoast. CDP review can run concurrently with local permits if managed proactively.",
+    "hillside":               "Hillside or sloped sites in this jurisdiction may trigger additional grading, geotechnical, and structural requirements. A soils/geotech report is typically required. Shoring or retaining wall permits may also apply.",
+    "high_complexity":        "This is a high-complexity permitting jurisdiction with lengthy review timelines and multiple agencies involved. A licensed permit expediter is strongly recommended — not optional.",
+    "adu_fast_track":         "California state law mandates a 60-day permit review for ADUs. Impact fees are waived for ADUs under 750 sqft. Pre-approved ADU plan sets may be available through the local AHJ to further accelerate permitting.",
+    "hvhz":                   "Miami-Dade High Velocity Hurricane Zone (HVHZ): all exterior products — windows, doors, roofing, and cladding — must carry a Miami-Dade Notice of Acceptance (NOA). Verify NOA compliance for every specified product before permit submission.",
+    "owner_builder":          "Arkansas state law allows owner-builders to self-permit their primary residence. No contractor license is required. An owner-builder affidavit is signed at permit issuance. Subcontractors (electrician, plumber) must still be licensed.",
+    "no_impact_fees":         "No school or park impact fees apply for remodels, additions, or ADUs in this jurisdiction — a meaningful cost advantage over California and other high-fee markets.",
+    "fire_rebuild_fast_track": "This jurisdiction has activated a dedicated fire rebuild permitting fast-track program. Confirm your project is registered in the fast-track queue and ask which fee waivers or timeline reductions apply to your parcel."
+  },
+  "address_keywords": {
+    "los angeles": "los_angeles_city",
+    "west hollywood": "los_angeles_city",
+    "culver city": "culver_city",
+    "santa monica": "santa_monica",
+    "altadena": "la_county",
+    "pasadena": "pasadena",
+    "beverly hills": "beverly_hills",
+    "malibu": "malibu",
+    "new york": "new_york_city",
+    "nyc": "new_york_city",
+    "manhattan": "new_york_city",
+    "brooklyn": "new_york_city",
+    "soho": "new_york_city",
+    "tribeca": "new_york_city",
+    "bronx": "new_york_city",
+    "queens": "new_york_city",
+    "san francisco": "san_francisco",
+    "miami": "miami_dade",
+    "coral gables": "miami_dade",
+    "seattle": "seattle",
+    "chicago": "chicago",
+    "boston": "boston",
+    "fayetteville": "fayetteville_ar",
+    "fayetteville ar": "fayetteville_ar",
+    "fayetteville arkansas": "fayetteville_ar"
+  },
+  "jurisdictions": {
+    "los_angeles_city": {
+      "name": "City of Los Angeles",
+      "ahj": "Los Angeles Department of Building and Safety (LADBS)",
+      "website": "https://www.ladbs.org",
+      "portal": "LADBS ePlanCheck & Online Permit Center",
+      "permit_center_url": "https://eplan.ladbs.org",
+      "phone": "311 (or 1-866-557-7368)",
+      "notes": "LA uses ePlanCheck for most residential and commercial projects. ADU permits have a streamlined process under California state law.",
+      "flags": ["adu_fast_track", "coastal"],
+      "submittal_requirements": [
+        "Completed LADBS permit application (Form A-1)",
+        "Two sets of architectural drawings: site plan, floor plans, roof plan, elevations, sections",
+        "Structural drawings and engineering calculations (stamped by CA-licensed engineer)",
+        "Soils/geotechnical report (required for hillside or soft-soil sites)",
+        "Title 24 energy compliance documentation (CF-1R, CF-2R forms)",
+        "CALGreen checklist (mandatory for new construction and major alterations)",
+        "SMIP (Strong Motion Instrumentation Program) fee calculation",
+        "Owner-builder declaration or contractor license verification",
+        "Proof of property ownership or authorization to build"
+      ],
+      "scopes": {
+        "new_construction": {
+          "permits_required": [
+            { "type": "Building Permit", "authority": "LADBS", "notes": "Required for all new structures. Includes architectural, structural, and site plan review." },
+            { "type": "Grading Permit", "authority": "LADBS", "notes": "Required if grading exceeds 50 cu. yards or alters drainage." },
+            { "type": "Electrical Permit", "authority": "LADBS", "notes": "Separate permit for all electrical work." },
+            { "type": "Plumbing Permit", "authority": "LADBS", "notes": "Separate permit for all plumbing work." },
+            { "type": "Mechanical Permit", "authority": "LADBS", "notes": "Required for HVAC, ductwork, and ventilation." },
+            { "type": "Fire Sprinkler Permit", "authority": "LAFD", "notes": "Required for most new construction over 1,000 sq ft in the City of LA." },
+            { "type": "Sewer Connection Permit", "authority": "LA Bureau of Sanitation", "notes": "Required when connecting to city sewer." }
+          ],
+          "typical_timeline": "6–18 months for plan check + permit issuance. Complex projects or hillside sites can exceed 24 months.",
+          "typical_fees": "1–3% of total construction valuation. Impact fees (school, parks) are additional.",
+          "next_steps": [
+            "Hire a licensed architect to prepare permit-ready construction documents.",
+            "Submit plans via LADBS ePlanCheck portal (electronic filing).",
+            "Address plan check corrections — typically 2–4 rounds.",
+            "Pay permit and impact fees upon approval.",
+            "Schedule inspections at each construction phase (foundation, framing, rough MEP, final).",
+            "Obtain Certificate of Occupancy upon passing final inspection."
+          ]
+        },
+        "whole_house": {
+          "permits_required": [
+            { "type": "Building Permit (Alteration)", "authority": "LADBS", "notes": "Required for structural changes, room additions, or full gut renovations." },
+            { "type": "Electrical Permit", "authority": "LADBS", "notes": "Required for panel upgrades, rewiring, or new circuits." },
+            { "type": "Plumbing Permit", "authority": "LADBS", "notes": "Required for repipe, drain relocation, or new fixtures." },
+            { "type": "Mechanical Permit", "authority": "LADBS", "notes": "Required for HVAC replacement or new system installation." }
+          ],
+          "typical_timeline": "3–9 months for plan check + issuance.",
+          "typical_fees": "0.5–1.5% of construction valuation.",
+          "next_steps": [
+            "Determine scope — structural changes require architect-stamped drawings.",
+            "Submit alteration permit application via LADBS ePlanCheck.",
+            "Apply for MEP permits separately after building permit is issued.",
+            "Schedule rough and final inspections for each trade.",
+            "Obtain final sign-off from LADBS inspector."
+          ]
+        },
+        "kitchen": {
+          "permits_required": [
+            { "type": "Electrical Permit", "authority": "LADBS", "notes": "Required for new circuits, panel work, or under-cabinet lighting." },
+            { "type": "Plumbing Permit", "authority": "LADBS", "notes": "Required if relocating sink or adding new plumbing connections." },
+            { "type": "Building Permit (Alteration)", "authority": "LADBS", "notes": "Required only if removing walls or making structural changes." }
+          ],
+          "typical_timeline": "2–6 weeks for over-the-counter permits; longer if structural.",
+          "typical_fees": "$200–$800 for trade permits; more if structural.",
+          "next_steps": [
+            "Determine if any walls are load-bearing before demo.",
+            "Pull electrical and plumbing permits online via LADBS portal.",
+            "Schedule rough inspections before closing walls.",
+            "Schedule final inspection upon project completion."
+          ]
+        },
+        "bathroom": {
+          "permits_required": [
+            { "type": "Plumbing Permit", "authority": "LADBS", "notes": "Required for all plumbing work including fixture relocation." },
+            { "type": "Electrical Permit", "authority": "LADBS", "notes": "Required for GFCI circuits, exhaust fan wiring, and heated floor systems." }
+          ],
+          "typical_timeline": "1–4 weeks over-the-counter.",
+          "typical_fees": "$150–$500.",
+          "next_steps": [
+            "Pull plumbing and electrical permits via LADBS online portal.",
+            "Schedule rough plumbing and rough electrical inspections.",
+            "Do not close walls until rough inspections pass.",
+            "Schedule final inspection."
+          ]
+        },
+        "addition": {
+          "permits_required": [
+            { "type": "Building Permit (Addition)", "authority": "LADBS", "notes": "Required for all additions that expand the building footprint or square footage." },
+            { "type": "Grading Permit", "authority": "LADBS", "notes": "May be required depending on site conditions." },
+            { "type": "Electrical Permit", "authority": "LADBS", "notes": "Required for all new electrical work in the addition." },
+            { "type": "Plumbing Permit", "authority": "LADBS", "notes": "Required if addition includes plumbing." },
+            { "type": "Mechanical Permit", "authority": "LADBS", "notes": "Required if addition includes HVAC." }
+          ],
+          "typical_timeline": "4–12 months.",
+          "typical_fees": "1–2% of construction valuation.",
+          "next_steps": [
+            "Hire architect to prepare addition drawings including site plan, floor plans, and elevations.",
+            "Verify zoning setbacks and lot coverage limits before design.",
+            "Submit via LADBS ePlanCheck.",
+            "Schedule foundation, framing, rough MEP, and final inspections."
+          ]
+        },
+        "adu": {
+          "permits_required": [
+            { "type": "ADU Building Permit", "authority": "LADBS", "notes": "Streamlined under California SB 9 and LA ADU ordinance. Pre-approved ADU plans are available." },
+            { "type": "Electrical Permit", "authority": "LADBS", "notes": "Required." },
+            { "type": "Plumbing Permit", "authority": "LADBS", "notes": "Required." },
+            { "type": "Mechanical Permit", "authority": "LADBS", "notes": "Required." }
+          ],
+          "typical_timeline": "60–120 days under state-mandated ADU fast-track process.",
+          "typical_fees": "Impact fees waived for ADUs under 750 sq ft under California law.",
+          "next_steps": [
+            "Confirm property eligibility (zoning, lot size, existing structures).",
+            "Consider LADBS pre-approved ADU plans to accelerate permitting.",
+            "Submit ADU permit application through LADBS portal.",
+            "Coordinate utility connections with LADWP.",
+            "Schedule all required inspections."
+          ]
+        },
+        "demolition": {
+          "permits_required": [
+            { "type": "Demolition Permit (Building Permit)", "authority": "LADBS", "notes": "Required for full or partial demolition of any structure. Small/partial demo (non-structural, sheds, patio covers) may qualify for express permit via PermitLA without full plan review. Full demolition of entire structures requires standard plan check." },
+            { "type": "SCAQMD Notification (Rule 1403)", "authority": "South Coast Air Quality Management District", "notes": "Mandatory 10-working-day notification before demolition of any structure that may contain asbestos (pre-1978 buildings). Asbestos survey required." },
+            { "type": "Utility Disconnection Verification", "authority": "SoCalGas / LADWP / LA Bureau of Sanitation", "notes": "Proof of disconnection from gas, electric, water, and sewer required before demolition begins." },
+            { "type": "Registered Deputy Inspector (DPI)", "authority": "LADBS", "notes": "Required for: multi-story structural demolition, demolition affecting lateral force-resisting systems, demolition requiring shoring/underpinning of adjacent structures, and hillside demolition with grading implications. NOT typically required for small/partial demo (interior non-bearing walls, detached garages, sheds, patio covers). DPI must hold LADBS certification in relevant classification (RC, SM, SSW, GD, SFRM, MB, or WD). Hired and paid by property owner; coordinated by contractor." }
+          ],
+          "clearances_required": [
+            { "type": "Housing Department Clearance", "notes": "Required for occupied residential structures." },
+            { "type": "City Planning Clearance", "notes": "Verify no historic designation, specific plan restrictions, or HPOZ overlay." },
+            { "type": "Cultural Heritage Commission", "notes": "Required if structure is a Historic-Cultural Monument (HCM) or in an HPOZ. Even partial demolition requires review." },
+            { "type": "Fire Department Clearance", "notes": "Required for commercial or multi-unit structures." },
+            { "type": "Bureau of Engineering Clearance", "notes": "Required for structures adjacent to public right-of-way." },
+            { "type": "DPW (Dept of Public Works) Clearance", "notes": "Verify no public utility or infrastructure conflicts." },
+            { "type": "SCAQMD Clearance", "notes": "Asbestos notification and clearance per Rule 1403." }
+          ],
+          "typical_timeline": "2–8 weeks for permit issuance. Express permits (small/partial demo) can be same-day via PermitLA. Full demolition with clearances can take 4–12 weeks.",
+          "typical_fees": "$200–$2,000+ depending on scope and structure size. Additional fees for hazmat abatement, SCAQMD compliance, and DPI services.",
+          "next_steps": [
+            "Determine scope: full demolition vs. partial/small demolition.",
+            "Verify parcel on ZIMAS (https://zimas.lacity.org) for overlays, HPOZ, HCM, or specific plan designations.",
+            "Commission asbestos survey (mandatory for pre-1978 structures) and lead paint evaluation.",
+            "File SCAQMD Rule 1403 notification at least 10 working days before demolition.",
+            "Request utility disconnections from SoCalGas, LADWP, and Bureau of Sanitation.",
+            "Obtain all required clearances (Housing, Planning, Cultural Heritage, Fire, BOE, DPW).",
+            "If DPI is required: hire a Registered Deputy Inspector with the correct LADBS classification. Discuss DPI requirements with your assigned LADBS plan checker or call LADBS Inspection Division at (213) 473-3231.",
+            "Submit demolition permit application via LADBS ePlanCheck or PermitLA (express permits).",
+            "Schedule LADBS inspections before and after demolition.",
+            "File proper disposal documentation for demolished materials."
+          ],
+          "dpi_details": {
+            "description": "A Registered Deputy Inspector (DPI) is a licensed professional certified by LADBS to perform continuous or special inspections on behalf of the Department. For demolition, a DPI may be required when the scope involves structural elements, multi-story buildings, or work that could affect adjacent structures.",
+            "classifications": [
+              { "code": "RC", "name": "Reinforced Concrete" },
+              { "code": "SM", "name": "Structural Masonry" },
+              { "code": "SSW", "name": "Structural Steel / Welding" },
+              { "code": "GD", "name": "Grading" },
+              { "code": "SFRM", "name": "Sprayed Fire-Resistant Materials" },
+              { "code": "MB", "name": "Methane Barrier" },
+              { "code": "WD", "name": "Wood" }
+            ],
+            "who_to_contact": "Your assigned LADBS plan checker (first), LADBS Inspection Division at (213) 473-3231, or visit the Development Services Center at 201 N. Figueroa St., 4th Floor, Los Angeles, CA 90012.",
+            "key_forms": [
+              { "form": "P-BC-2023-035", "title": "Registration for Deputy Inspector", "url": "https://dbs.lacity.gov/sites/default/files/efs/forms/pc17/P_BC-2023-035---Registration-for-Deputy-Inspector.pdf" },
+              { "form": "Certificate of Compliance", "title": "Registered Deputy Inspector's Certificate of Compliance", "url": "https://ladbs.org/docs/default-source/forms/inspection-forms/registered-deputy-inspector-39-s-certificate-of-compliance.pdf" },
+              { "form": "P-BC-2014-034", "title": "Employment and Duties of a Registered Deputy Inspector", "url": "https://dbs.lacity.gov/sites/default/files/efs/forms/pc17/employment-and-duties-of-a-registered-deputy-inspector-ib-p-bc2014-034.pdf" }
+            ],
+            "code_references": ["LAMC Section 91.108", "LA Building Code Chapter 17 (Special Inspections and Tests)"],
+            "hiring_process": "The property owner (or their contractor) hires and pays for the DPI. The DPI performs continuous inspection during demolition, keeps records, and submits a Certificate of Compliance to LADBS and the design professional of record."
+          }
+        }
+      }
+    },
+    "la_county": {
+      "name": "Los Angeles County (Unincorporated)",
+      "ahj": "LA County Department of Public Works — Building and Safety Division",
+      "website": "https://dpw.lacounty.gov/building-and-safety/",
+      "portal": "LA County Building Permit Portal",
+      "permit_center_url": "https://aca-prod.accela.com/LACOUNTY/",
+      "phone": "1-800-675-4357",
+      "notes": "Applies to unincorporated areas including Altadena, Malibu (coastal areas), East LA, Topanga, and others. Different from City of LA.",
+      "flags": ["adu_fast_track", "coastal", "hillside"],
+      "submittal_requirements": [
+        "Completed LA County DPW permit application",
+        "Two sets of architectural drawings: site plan, floor plans, elevations, sections, roof plan",
+        "Structural drawings and engineering calculations (stamped by CA-licensed structural engineer)",
+        "Soils/geotechnical report (required for new construction and additions)",
+        "Title 24 energy compliance documentation (CF-1R and CF-2R forms)",
+        "CALGreen checklist",
+        "Grading plan (if applicable — prepared by CA-licensed civil engineer)",
+        "Drainage plan and hydrology study (if grading or drainage is affected)",
+        "LACFCD approval (if project is near a flood control channel)",
+        "Proof of property ownership or authorization to build",
+        "Contractor license verification (C-39 for roofing, B-General, etc.)"
+      ],
+      "scopes": {
+        "new_construction": {
+          "permits_required": [
+            { "type": "Building Permit", "authority": "LA County DPW", "notes": "Required for all new structures in unincorporated county areas." },
+            { "type": "Grading Permit", "authority": "LA County DPW", "notes": "Required for grading over 50 cu. yards." },
+            { "type": "Electrical Permit", "authority": "LA County DPW", "notes": "Separate trade permit." },
+            { "type": "Plumbing Permit", "authority": "LA County DPW", "notes": "Separate trade permit." },
+            { "type": "Mechanical Permit", "authority": "LA County DPW", "notes": "Separate trade permit." },
+            { "type": "Septic Permit", "authority": "LA County Environmental Health", "notes": "Required if not connecting to public sewer." }
+          ],
+          "typical_timeline": "6–18 months.",
+          "typical_fees": "1–2.5% of construction valuation.",
+          "next_steps": [
+            "Verify property is in unincorporated LA County (not a city).",
+            "Hire a licensed architect to prepare construction documents.",
+            "Submit permit application to LA County DPW Building and Safety.",
+            "Address plan check corrections.",
+            "Schedule inspections through LA County DPW.",
+            "Obtain final approval and Certificate of Occupancy."
+          ]
+        },
+        "whole_house": {
+          "permits_required": [
+            { "type": "Alteration Permit", "authority": "LA County DPW", "notes": "Required for gut renovations and structural changes." },
+            { "type": "Electrical Permit", "authority": "LA County DPW", "notes": "For rewiring and panel work." },
+            { "type": "Plumbing Permit", "authority": "LA County DPW", "notes": "For repipe and fixture relocation." },
+            { "type": "Mechanical Permit", "authority": "LA County DPW", "notes": "For HVAC replacement." }
+          ],
+          "typical_timeline": "3–9 months.",
+          "typical_fees": "0.5–1.5% of construction valuation.",
+          "next_steps": [
+            "Submit alteration permit application to LA County DPW.",
+            "Pull MEP permits separately.",
+            "Schedule phased inspections with LA County inspectors."
+          ]
+        },
+        "adu": {
+          "permits_required": [
+            { "type": "ADU Building Permit", "authority": "LA County DPW", "notes": "Governed by California ADU law. County follows state 60-day review mandate." },
+            { "type": "Electrical Permit", "authority": "LA County DPW", "notes": "Required." },
+            { "type": "Plumbing Permit", "authority": "LA County DPW", "notes": "Required." }
+          ],
+          "typical_timeline": "60–120 days.",
+          "typical_fees": "Impact fees may apply for ADUs over 750 sq ft.",
+          "next_steps": [
+            "Confirm property is in unincorporated LA County.",
+            "Submit ADU application to LA County DPW.",
+            "Coordinate utility connections."
+          ]
+        }
+      }
+    },
+    "new_york_city": {
+      "name": "New York City",
+      "ahj": "NYC Department of Buildings (DOB)",
+      "website": "https://www.nyc.gov/site/buildings/index.page",
+      "portal": "DOB NOW: Build",
+      "permit_center_url": "https://a810-dobnow.nyc.gov/publish/",
+      "phone": "311",
+      "notes": "NYC has one of the most complex permitting systems in the US. Projects in historic districts require additional Landmarks Preservation Commission (LPC) approval. A permit expediter is strongly recommended.",
+      "flags": ["historic_district", "high_complexity"],
+      "submittal_requirements": [
+        "Filing by a NYC-licensed Registered Architect (RA) or Professional Engineer (PE) — mandatory",
+        "DOB NOW: Build online application (PW1 Work Permit application)",
+        "Architectural drawings per NYC Building Code: site plan, floor plans, elevations, sections, details",
+        "Structural engineer drawings and calculations (PE-stamped)",
+        "NYC Energy Conservation Code (NYCECC) compliance documentation",
+        "ZRD1 or ZR Compliance form (Zoning Resolution compliance)",
+        "Landmarks Preservation Commission (LPC) approval if in a historic district",
+        "Special inspection program (TR1 form) for regulated work",
+        "Coop/condo board approval letter (if applicable)",
+        "Asbestos investigation report (ACP-5) for pre-1987 buildings",
+        "Emergency contact and safety plan",
+        "Owner authorization or power of attorney if filed by agent"
+      ],
+      "scopes": {
+        "new_construction": {
+          "permits_required": [
+            { "type": "New Building (NB) Permit", "authority": "NYC DOB", "notes": "Required for all new structures. Filed by a licensed PE or RA." },
+            { "type": "Electrical Permit", "authority": "NYC DOB", "notes": "Filed by a licensed electrical contractor." },
+            { "type": "Plumbing Permit", "authority": "NYC DOB", "notes": "Filed by a licensed plumber." },
+            { "type": "Fire Suppression Permit", "authority": "FDNY", "notes": "Required for sprinkler systems in most new construction." },
+            { "type": "Landmarks Approval", "authority": "NYC LPC", "notes": "Required if property is in a designated historic district or is a landmark." }
+          ],
+          "typical_timeline": "12–36 months. Historic districts add 3–12 months.",
+          "typical_fees": "1–3% of construction cost. NYC has high impact and development fees.",
+          "next_steps": [
+            "Hire a licensed NYC Architect (RA) or Engineer (PE) — required for all DOB filings.",
+            "Engage a permit expediter familiar with DOB NOW: Build.",
+            "File via DOB NOW: Build online portal.",
+            "Respond to plan examiner objections.",
+            "Post permit on job site before work begins.",
+            "Schedule all required DOB and special inspections.",
+            "File TR1 (Technical Report) and close out all open applications.",
+            "Obtain Certificate of Occupancy (CO) or Temporary CO (TCO)."
+          ]
+        },
+        "whole_house": {
+          "permits_required": [
+            { "type": "Alteration Type 1 (ALT1)", "authority": "NYC DOB", "notes": "Required when changing occupancy, egress, or adding/removing floors." },
+            { "type": "Alteration Type 2 (ALT2)", "authority": "NYC DOB", "notes": "For significant renovations not changing occupancy. Most gut renovations." },
+            { "type": "Electrical Permit", "authority": "NYC DOB", "notes": "Required for all electrical work." },
+            { "type": "Plumbing Permit", "authority": "NYC DOB", "notes": "Required for all plumbing work." }
+          ],
+          "typical_timeline": "6–18 months.",
+          "typical_fees": "0.5–2% of construction valuation.",
+          "next_steps": [
+            "Determine ALT1 vs ALT2 with your architect.",
+            "File via DOB NOW: Build.",
+            "Hire a permit expediter — highly recommended in NYC.",
+            "Schedule required special inspections (structural, fire, etc.).",
+            "Close out all permits before final sign-off."
+          ]
+        },
+        "kitchen": {
+          "permits_required": [
+            { "type": "Alteration Type 2 (ALT2)", "authority": "NYC DOB", "notes": "Required if plumbing or electrical is being modified." },
+            { "type": "Electrical Permit", "authority": "NYC DOB", "notes": "For new circuits or panel work." },
+            { "type": "Plumbing Permit", "authority": "NYC DOB", "notes": "For sink or drain relocation." }
+          ],
+          "typical_timeline": "4–12 weeks.",
+          "typical_fees": "$500–$2,000+.",
+          "next_steps": [
+            "Confirm with building management if coop/condo board approval is needed.",
+            "File ALT2 and trade permits via DOB NOW.",
+            "Schedule required inspections."
+          ]
+        },
+        "bathroom": {
+          "permits_required": [
+            { "type": "Alteration Type 2 (ALT2)", "authority": "NYC DOB", "notes": "Required for plumbing and electrical modifications." },
+            { "type": "Plumbing Permit", "authority": "NYC DOB", "notes": "Required." },
+            { "type": "Electrical Permit", "authority": "NYC DOB", "notes": "Required for GFCI and exhaust fan wiring." }
+          ],
+          "typical_timeline": "4–8 weeks.",
+          "typical_fees": "$400–$1,500.",
+          "next_steps": [
+            "Check coop/condo board requirements.",
+            "File via DOB NOW.",
+            "Schedule plumbing and electrical inspections."
+          ]
+        },
+        "addition": {
+          "permits_required": [
+            { "type": "Alteration Type 1 (ALT1)", "authority": "NYC DOB", "notes": "Required for horizontal or vertical additions that affect zoning floor area." },
+            { "type": "Electrical Permit", "authority": "NYC DOB", "notes": "Required." },
+            { "type": "Plumbing Permit", "authority": "NYC DOB", "notes": "If applicable." }
+          ],
+          "typical_timeline": "12–24 months.",
+          "typical_fees": "1–2% of construction cost.",
+          "next_steps": [
+            "Verify zoning FAR (Floor Area Ratio) allows the addition.",
+            "Hire a licensed NYC Architect.",
+            "File ALT1 via DOB NOW.",
+            "Engage a permit expediter.",
+            "Obtain updated Certificate of Occupancy."
+          ]
+        }
+      }
+    },
+    "san_francisco": {
+      "name": "City and County of San Francisco",
+      "ahj": "SF Department of Building Inspection (DBI)",
+      "website": "https://sfdbi.org",
+      "portal": "SF DBI Online Permit Center",
+      "permit_center_url": "https://dbiweb02.sfgov.org/dbipts/",
+      "phone": "415-558-6088",
+      "notes": "SF has a lengthy and complex permitting environment. Many projects also require Planning Department approval before DBI will issue building permits. Historic districts and Discretionary Review (DR) can significantly delay projects.",
+      "flags": ["historic_district", "high_complexity", "coastal", "adu_fast_track"],
+      "submittal_requirements": [
+        "SF DBI permit application (Form 3+)",
+        "Planning Department approval or Planning sign-off (required before DBI issues permit for most projects)",
+        "Architectural drawings: site plan, floor plans, elevations, sections (CA-licensed architect stamp)",
+        "Structural drawings and calculations (PE-stamped)",
+        "Title 24 energy compliance documentation",
+        "Green Building (SF Green Building Ordinance) checklist",
+        "CEQA (California Environmental Quality Act) review if required",
+        "Historic Preservation review if in a historic district (SF Heritage / Planning Dept)",
+        "Stormwater control plan (SF Public Utilities Commission requirement for major projects)",
+        "Haz-mat survey for buildings with known asbestos or lead paint"
+      ],
+      "scopes": {
+        "new_construction": {
+          "permits_required": [
+            { "type": "Planning Approval", "authority": "SF Planning Department", "notes": "Required before DBI permit. May include CEQA review, DR hearings." },
+            { "type": "Building Permit", "authority": "SF DBI", "notes": "Issued after Planning approval." },
+            { "type": "Electrical Permit", "authority": "SF DBI", "notes": "Separate trade permit." },
+            { "type": "Plumbing Permit", "authority": "SF DBI", "notes": "Separate trade permit." },
+            { "type": "Mechanical Permit", "authority": "SF DBI", "notes": "Separate trade permit." }
+          ],
+          "typical_timeline": "18–48 months including planning and building review.",
+          "typical_fees": "2–5% of construction valuation.",
+          "next_steps": [
+            "Pre-application meeting with SF Planning Department strongly recommended.",
+            "Submit Planning application and await environmental review.",
+            "After Planning approval, submit building permit to DBI.",
+            "Address plan check corrections.",
+            "Schedule all required inspections.",
+            "Obtain Certificate of Final Completion."
+          ]
+        },
+        "whole_house": {
+          "permits_required": [
+            { "type": "Alteration Building Permit", "authority": "SF DBI", "notes": "Required for gut renovations. May also require Planning review." },
+            { "type": "Electrical Permit", "authority": "SF DBI", "notes": "Required." },
+            { "type": "Plumbing Permit", "authority": "SF DBI", "notes": "Required." },
+            { "type": "Mechanical Permit", "authority": "SF DBI", "notes": "Required for HVAC." }
+          ],
+          "typical_timeline": "6–18 months.",
+          "typical_fees": "1–2% of construction valuation.",
+          "next_steps": [
+            "Determine if Planning review is required (historic district, change of use).",
+            "Submit alteration permit to DBI online.",
+            "Coordinate trade permits.",
+            "Schedule inspections."
+          ]
+        }
+      }
+    },
+    "miami_dade": {
+      "name": "Miami-Dade County",
+      "ahj": "Miami-Dade County Regulatory and Economic Resources (RER) — Building Division",
+      "website": "https://www.miamidade.gov/building/",
+      "portal": "Miami-Dade iBuild Portal",
+      "permit_center_url": "https://www.miamidade.gov/permits/",
+      "phone": "786-315-2100",
+      "notes": "Miami-Dade has Miami-Dade Product Approval requirements and hurricane impact standards (High Velocity Hurricane Zone). All exterior glazing, roofing, and cladding must meet HVHZ standards.",
+      "flags": ["hvhz"],
+      "submittal_requirements": [
+        "Miami-Dade RER permit application (via iBuild portal)",
+        "Architectural drawings: site plan, floor plans, elevations, sections (FL-licensed architect stamp)",
+        "Structural drawings and calculations (FL-licensed structural engineer stamp)",
+        "Miami-Dade NOA (Notice of Acceptance) documentation for all exterior products (windows, doors, roofing, cladding)",
+        "Florida Building Code energy compliance (Florida Energy Code, Form 600A-2017)",
+        "HVHZ (High Velocity Hurricane Zone) product compliance sheets",
+        "Soil borings / geotechnical report",
+        "FEMA flood zone compliance documentation (Elevation Certificate if in flood zone)",
+        "Miami-Dade DERM (Environmental Resources Management) approval if near wetlands or canals",
+        "Fire sprinkler plans (submitted to MDFR separately if applicable)"
+      ],
+      "scopes": {
+        "new_construction": {
+          "permits_required": [
+            { "type": "Building Permit", "authority": "Miami-Dade RER", "notes": "Required. All exterior products must have Miami-Dade NOA (Notice of Acceptance)." },
+            { "type": "Electrical Permit", "authority": "Miami-Dade RER", "notes": "Required." },
+            { "type": "Plumbing Permit", "authority": "Miami-Dade RER", "notes": "Required." },
+            { "type": "Mechanical Permit", "authority": "Miami-Dade RER", "notes": "Required." },
+            { "type": "Roofing Permit", "authority": "Miami-Dade RER", "notes": "Separate permit required. HVHZ compliance mandatory." }
+          ],
+          "typical_timeline": "6–18 months.",
+          "typical_fees": "1–2% of construction valuation.",
+          "next_steps": [
+            "Ensure all specified products have Miami-Dade NOA approval.",
+            "Submit permit application via iBuild portal.",
+            "Comply with HVHZ (High Velocity Hurricane Zone) requirements.",
+            "Schedule all required inspections.",
+            "Obtain Certificate of Occupancy."
+          ]
+        },
+        "whole_house": {
+          "permits_required": [
+            { "type": "Alteration Permit", "authority": "Miami-Dade RER", "notes": "Required for gut renovations." },
+            { "type": "Electrical Permit", "authority": "Miami-Dade RER", "notes": "Required." },
+            { "type": "Plumbing Permit", "authority": "Miami-Dade RER", "notes": "Required." },
+            { "type": "Mechanical Permit", "authority": "Miami-Dade RER", "notes": "Required." }
+          ],
+          "typical_timeline": "3–9 months.",
+          "typical_fees": "0.5–1.5% of construction valuation.",
+          "next_steps": [
+            "Submit alteration permit via iBuild.",
+            "Verify HVHZ compliance for any exterior work.",
+            "Schedule inspections."
+          ]
+        }
+      }
+    },
+    "seattle": {
+      "name": "City of Seattle",
+      "ahj": "Seattle Department of Construction and Inspections (SDCI)",
+      "website": "https://www.seattle.gov/sdci",
+      "portal": "Seattle Services Portal",
+      "permit_center_url": "https://cosaccela.seattle.gov/portal/welcome.aspx",
+      "phone": "206-684-8850",
+      "notes": "Seattle uses a tiered permit process (Standard vs. Subject-to-Field-Inspection). Many ADU projects benefit from Seattle's pre-approved plan program.",
+      "flags": ["hillside"],
+      "submittal_requirements": [
+        "Seattle Services Portal online permit application",
+        "Architectural drawings: site plan, floor plans, elevations, sections (WA-licensed architect stamp for projects over threshold)",
+        "Structural drawings and calculations (WA-licensed PE stamp)",
+        "Washington State Energy Code (WSEC) compliance documentation",
+        "SEPA (State Environmental Policy Act) checklist if project exceeds thresholds",
+        "Grading and drainage plan (if site grading is required)",
+        "Side sewer permit application (Seattle Public Utilities)",
+        "Arborist report if exceptional trees are present on site",
+        "Stormwater management plan (if impervious area exceeds 2,000 sq ft)"
+      ],
+      "scopes": {
+        "new_construction": {
+          "permits_required": [
+            { "type": "Construction Permit", "authority": "SDCI", "notes": "Required for all new structures." },
+            { "type": "Electrical Permit", "authority": "SDCI", "notes": "Required." },
+            { "type": "Plumbing Permit", "authority": "SDCI", "notes": "Required." },
+            { "type": "Mechanical Permit", "authority": "SDCI", "notes": "Required." },
+            { "type": "Side Sewer Permit", "authority": "Seattle Public Utilities", "notes": "Required for new sewer connections." }
+          ],
+          "typical_timeline": "6–18 months.",
+          "typical_fees": "1–2% of construction valuation.",
+          "next_steps": [
+            "Submit permit application via Seattle Services Portal.",
+            "Complete SEPA (State Environmental Policy Act) checklist if required.",
+            "Address plan review corrections.",
+            "Schedule inspections with SDCI.",
+            "Obtain Certificate of Occupancy."
+          ]
+        },
+        "whole_house": {
+          "permits_required": [
+            { "type": "Alteration Permit", "authority": "SDCI", "notes": "Required for gut renovations." },
+            { "type": "Electrical Permit", "authority": "SDCI", "notes": "Required." },
+            { "type": "Plumbing Permit", "authority": "SDCI", "notes": "Required." }
+          ],
+          "typical_timeline": "3–9 months.",
+          "typical_fees": "0.5–1.5% of construction valuation.",
+          "next_steps": [
+            "Determine permit tier (Standard vs. Subject-to-Field-Inspection).",
+            "Submit via Seattle Services Portal.",
+            "Schedule inspections."
+          ]
+        }
+      }
+    },
+    "chicago": {
+      "name": "City of Chicago",
+      "ahj": "Chicago Department of Buildings (CDB)",
+      "website": "https://www.chicago.gov/city/en/depts/bldgs.html",
+      "portal": "Chicago E-Plan",
+      "permit_center_url": "https://eplan.cityofchicago.org/",
+      "phone": "312-744-5000",
+      "notes": "Chicago requires a licensed Chicago-registered architect for most permit filings. Chicago Building Code is locally amended and differs from IBC in several key areas.",
+      "flags": ["historic_district"],
+      "submittal_requirements": [
+        "Chicago E-Plan online permit application",
+        "Architectural drawings prepared and stamped by a Chicago-registered architect (mandatory)",
+        "Structural drawings and calculations (IL-licensed PE stamp)",
+        "Zoning Certificate of Compliance (obtained from Chicago Zoning Department before permit filing)",
+        "Chicago Energy Conservation Code compliance documentation",
+        "Americans with Disabilities Act (ADA) compliance drawings if applicable",
+        "Asbestos survey and abatement plan for pre-1980 buildings",
+        "Foundation investigation report (geotechnical) for new construction",
+        "Sewer connection permit (Chicago Department of Water Management)",
+        "Sign-off from Chicago Fire Prevention Bureau for fire suppression systems"
+      ],
+      "scopes": {
+        "new_construction": {
+          "permits_required": [
+            { "type": "Building Permit", "authority": "Chicago CDB", "notes": "Required. Must be filed by a Chicago-registered architect." },
+            { "type": "Electrical Permit", "authority": "Chicago CDB", "notes": "Required." },
+            { "type": "Plumbing Permit", "authority": "Chicago CDB", "notes": "Required." },
+            { "type": "Zoning Certificate", "authority": "Chicago Zoning", "notes": "Required to confirm zoning compliance before permit issuance." }
+          ],
+          "typical_timeline": "6–18 months.",
+          "typical_fees": "1–2% of construction valuation.",
+          "next_steps": [
+            "Confirm zoning and obtain Zoning Certificate.",
+            "Hire a Chicago-registered architect.",
+            "Submit via Chicago E-Plan.",
+            "Address plan review comments.",
+            "Schedule inspections with CDB."
+          ]
+        },
+        "whole_house": {
+          "permits_required": [
+            { "type": "Renovation Permit", "authority": "Chicago CDB", "notes": "Required for gut renovations." },
+            { "type": "Electrical Permit", "authority": "Chicago CDB", "notes": "Required." },
+            { "type": "Plumbing Permit", "authority": "Chicago CDB", "notes": "Required." }
+          ],
+          "typical_timeline": "3–9 months.",
+          "typical_fees": "0.5–1.5% of construction valuation.",
+          "next_steps": [
+            "Submit renovation permit via Chicago E-Plan.",
+            "Pull MEP permits separately.",
+            "Schedule inspections."
+          ]
+        }
+      }
+    },
+    "fayetteville_ar": {
+      "name": "City of Fayetteville, AR",
+      "ahj": "Fayetteville Development Services Division",
+      "website": "https://www.fayetteville-ar.gov/development-services",
+      "portal": "CitizenServe Online Permit Portal",
+      "permit_center_url": "https://www.fayetteville-ar.gov/development-services",
+      "phone": "(479) 575-8290",
+      "notes": "Fayetteville is a low-complexity, affordable permitting jurisdiction. Owner-builders may self-permit their primary residence under Arkansas law. No school or park impact fees for additions or remodels. Historic District Commission (HDC) review required for properties near the downtown square.",
+      "flags": ["owner_builder", "no_impact_fees", "historic_district"],
+      "submittal_requirements": [
+        "CitizenServe online permit application (electronic submission)",
+        "Site plan showing existing footprint and proposed work with all setback dimensions labeled",
+        "Floor plans (existing and proposed), fully dimensioned",
+        "Elevations (all four sides showing the addition or new structure in context)",
+        "Foundation plan (footing type and sizes)",
+        "2018 IECC energy compliance documentation for all conditioned space",
+        "Electrical, plumbing, and mechanical plans (if those permits are being pulled)",
+        "Owner-builder affidavit (if owner is self-permitting — signed at permit issuance)",
+        "HOA approval letter if applicable"
+      ],
+      "scopes": {
+        "new_construction": {
+          "permits_required": [
+            { "type": "Building Permit", "authority": "Fayetteville Development Services", "notes": "Required for all new structures. Fee: ~$5–8 per $1,000 of construction valuation." },
+            { "type": "Grading Permit", "authority": "Fayetteville Development Services", "notes": "Required if site grading or drainage is affected." },
+            { "type": "Electrical Permit", "authority": "Fayetteville Development Services", "notes": "Required for all new electrical work. Flat fee $75–200." },
+            { "type": "Plumbing Permit", "authority": "Fayetteville Development Services", "notes": "Required for all plumbing. Flat fee $75–200." },
+            { "type": "Mechanical Permit", "authority": "Fayetteville Development Services", "notes": "Required for HVAC. Flat fee $75–150." }
+          ],
+          "typical_timeline": "10–20 business days for plan review. No expediter needed.",
+          "typical_fees": "$5–8 per $1,000 construction valuation plus $75–200 per trade permit. No impact fees.",
+          "next_steps": [
+            "Verify zoning (setbacks, lot coverage, height limits) at Fayetteville GIS portal.",
+            "Check floodplain status on FEMA FIRM maps.",
+            "If near downtown square, confirm Historic District Commission (HDC) requirements — HDC approval precedes building permit.",
+            "Submit permit application and all documents via CitizenServe portal.",
+            "Sign owner-builder affidavit at permit issuance if self-permitting.",
+            "Schedule inspections: footing, rough framing, rough MEP, insulation, final."
+          ]
+        },
+        "addition": {
+          "permits_required": [
+            { "type": "Building Permit (Addition)", "authority": "Fayetteville Development Services", "notes": "Required for all additions that expand footprint or square footage. Fee: ~$5–8 per $1,000 valuation." },
+            { "type": "Electrical Permit", "authority": "Fayetteville Development Services", "notes": "Required if addition includes new electrical work." },
+            { "type": "Plumbing Permit", "authority": "Fayetteville Development Services", "notes": "Required if addition includes new plumbing." },
+            { "type": "Mechanical Permit", "authority": "Fayetteville Development Services", "notes": "Required if addition includes new HVAC or ductwork extension." }
+          ],
+          "typical_timeline": "5–10 business days (simple); 10–20 business days (structural complexity); +30–60 days if Historic District Commission review required.",
+          "typical_fees": "Total $700–$1,200 for a typical $80,000 addition. No impact fees.",
+          "next_steps": [
+            "Verify zoning setbacks and lot coverage limits at Fayetteville GIS portal.",
+            "If near downtown square, get HDC approval before submitting to Building Division.",
+            "Submit via CitizenServe with site plan, floor plans, elevations, foundation plan, and energy compliance docs.",
+            "Sign owner-builder affidavit if self-permitting.",
+            "Schedule: footing, rough framing, rough MEP, insulation, final inspections."
+          ]
+        },
+        "whole_house": {
+          "permits_required": [
+            { "type": "Building Permit (Alteration)", "authority": "Fayetteville Development Services", "notes": "Required for structural changes or full gut renovations." },
+            { "type": "Electrical Permit", "authority": "Fayetteville Development Services", "notes": "Required for rewiring or panel work." },
+            { "type": "Plumbing Permit", "authority": "Fayetteville Development Services", "notes": "Required for repipe or fixture relocation." },
+            { "type": "Mechanical Permit", "authority": "Fayetteville Development Services", "notes": "Required for HVAC replacement." }
+          ],
+          "typical_timeline": "5–15 business days for plan review.",
+          "typical_fees": "$5–8 per $1,000 valuation plus trade permit flat fees. No impact fees.",
+          "next_steps": [
+            "Submit alteration permit via CitizenServe with scope drawings.",
+            "Pull trade permits separately for electrical, plumbing, and mechanical.",
+            "Schedule rough and final inspections for each trade."
+          ]
+        },
+        "kitchen": {
+          "permits_required": [
+            { "type": "Electrical Permit", "authority": "Fayetteville Development Services", "notes": "Required for new circuits or panel work." },
+            { "type": "Plumbing Permit", "authority": "Fayetteville Development Services", "notes": "Required if relocating plumbing fixtures." },
+            { "type": "Building Permit (Alteration)", "authority": "Fayetteville Development Services", "notes": "Required only if removing or modifying walls." }
+          ],
+          "typical_timeline": "3–7 business days.",
+          "typical_fees": "$150–$500 for trade permits only; more if structural.",
+          "next_steps": [
+            "Pull trade permits via CitizenServe.",
+            "Schedule rough electrical and plumbing inspections before closing walls.",
+            "Schedule final inspection."
+          ]
+        },
+        "bathroom": {
+          "permits_required": [
+            { "type": "Plumbing Permit", "authority": "Fayetteville Development Services", "notes": "Required for all plumbing work." },
+            { "type": "Electrical Permit", "authority": "Fayetteville Development Services", "notes": "Required for GFCI circuits and exhaust fan wiring." }
+          ],
+          "typical_timeline": "3–7 business days.",
+          "typical_fees": "$150–$400.",
+          "next_steps": [
+            "Pull plumbing and electrical permits via CitizenServe.",
+            "Schedule rough inspections before closing walls.",
+            "Schedule final inspection."
+          ]
+        },
+        "adu": {
+          "permits_required": [
+            { "type": "Building Permit (ADU)", "authority": "Fayetteville Development Services", "notes": "Arkansas does not have California-style ADU fast-track law. Standard plan review applies." },
+            { "type": "Electrical Permit", "authority": "Fayetteville Development Services", "notes": "Required." },
+            { "type": "Plumbing Permit", "authority": "Fayetteville Development Services", "notes": "Required." },
+            { "type": "Mechanical Permit", "authority": "Fayetteville Development Services", "notes": "Required." }
+          ],
+          "typical_timeline": "10–20 business days.",
+          "typical_fees": "$5–8 per $1,000 valuation plus trade permit flat fees.",
+          "next_steps": [
+            "Confirm zoning allows ADU on the parcel (not all Fayetteville zones permit ADUs).",
+            "Submit full permit set via CitizenServe.",
+            "Coordinate utility connections with the City.",
+            "Schedule all required inspections."
+          ]
+        }
+      }
+    },
+    "generic": {
+      "name": "Generic / Unknown Jurisdiction",
+      "ahj": "Local Building Department (jurisdiction not identified)",
+      "website": null,
+      "portal": null,
+      "phone": "Contact your local city or county building department",
+      "notes": "Jurisdiction could not be determined from the address provided. The requirements below reflect standard IBC-based permit requirements common across most US jurisdictions.",
+      "flags": [],
+      "scopes": {
+        "new_construction": {
+          "permits_required": [
+            { "type": "Building Permit", "authority": "Local Building Department", "notes": "Required in all US jurisdictions for new construction." },
+            { "type": "Electrical Permit", "authority": "Local Building Department", "notes": "Required for all electrical work." },
+            { "type": "Plumbing Permit", "authority": "Local Building Department", "notes": "Required for all plumbing work." },
+            { "type": "Mechanical Permit", "authority": "Local Building Department", "notes": "Required for HVAC systems." }
+          ],
+          "typical_timeline": "3–18 months depending on jurisdiction.",
+          "typical_fees": "1–2% of construction valuation.",
+          "next_steps": [
+            "Contact your local building department to confirm requirements.",
+            "Hire a licensed architect to prepare permit-ready drawings.",
+            "Submit permit application with full construction documents.",
+            "Address plan review corrections.",
+            "Schedule inspections at each phase.",
+            "Obtain Certificate of Occupancy upon completion."
+          ]
+        },
+        "whole_house": {
+          "permits_required": [
+            { "type": "Alteration / Renovation Permit", "authority": "Local Building Department", "notes": "Required for gut renovations." },
+            { "type": "Electrical Permit", "authority": "Local Building Department", "notes": "Required for rewiring." },
+            { "type": "Plumbing Permit", "authority": "Local Building Department", "notes": "Required for repipe." },
+            { "type": "Mechanical Permit", "authority": "Local Building Department", "notes": "Required for HVAC." }
+          ],
+          "typical_timeline": "2–9 months.",
+          "typical_fees": "0.5–1.5% of construction valuation.",
+          "next_steps": [
+            "Contact local building department to confirm scope requirements.",
+            "Submit alteration permit with drawings.",
+            "Schedule inspections."
+          ]
+        },
+        "kitchen": {
+          "permits_required": [
+            { "type": "Electrical Permit", "authority": "Local Building Department", "notes": "Required for circuit work." },
+            { "type": "Plumbing Permit", "authority": "Local Building Department", "notes": "Required if relocating plumbing." },
+            { "type": "Building Permit", "authority": "Local Building Department", "notes": "Required if removing or modifying walls." }
+          ],
+          "typical_timeline": "1–6 weeks.",
+          "typical_fees": "$200–$1,000.",
+          "next_steps": [
+            "Contact local building department.",
+            "Pull required trade permits.",
+            "Schedule rough and final inspections."
+          ]
+        },
+        "bathroom": {
+          "permits_required": [
+            { "type": "Plumbing Permit", "authority": "Local Building Department", "notes": "Required." },
+            { "type": "Electrical Permit", "authority": "Local Building Department", "notes": "Required for GFCI and exhaust fan." }
+          ],
+          "typical_timeline": "1–4 weeks.",
+          "typical_fees": "$150–$600.",
+          "next_steps": [
+            "Pull plumbing and electrical permits.",
+            "Schedule rough inspections before closing walls.",
+            "Schedule final inspection."
+          ]
+        },
+        "addition": {
+          "permits_required": [
+            { "type": "Building Permit (Addition)", "authority": "Local Building Department", "notes": "Required for all additions." },
+            { "type": "Electrical Permit", "authority": "Local Building Department", "notes": "Required." },
+            { "type": "Plumbing Permit", "authority": "Local Building Department", "notes": "If applicable." },
+            { "type": "Mechanical Permit", "authority": "Local Building Department", "notes": "If applicable." }
+          ],
+          "typical_timeline": "3–12 months.",
+          "typical_fees": "1–2% of construction valuation.",
+          "next_steps": [
+            "Verify zoning setbacks and lot coverage limits.",
+            "Hire architect to prepare addition drawings.",
+            "Submit building permit with full documents.",
+            "Schedule phased inspections."
+          ]
+        },
+        "adu": {
+          "permits_required": [
+            { "type": "ADU Building Permit", "authority": "Local Building Department", "notes": "In California, state law mandates 60-day review. Other states vary." },
+            { "type": "Electrical Permit", "authority": "Local Building Department", "notes": "Required." },
+            { "type": "Plumbing Permit", "authority": "Local Building Department", "notes": "Required." }
+          ],
+          "typical_timeline": "60 days (CA) to 12 months (other states).",
+          "typical_fees": "Varies significantly by jurisdiction.",
+          "next_steps": [
+            "Confirm local ADU regulations and eligibility.",
+            "Submit ADU permit application.",
+            "Coordinate utility connections.",
+            "Schedule all required inspections."
+          ]
+        }
+      }
+    }
+  }
+}

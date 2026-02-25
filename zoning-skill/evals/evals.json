@@ -1,0 +1,65 @@
+{
+  "skill_name": "zoning-skill",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "What is R1 zoning in Los Angeles? What can I build there?",
+      "expected_output": "Detailed explanation of LA R1 zone with permitted uses, development standards, SB 9 mention, and caveats.",
+      "files": [],
+      "assertions": [
+        "Response mentions R1 is single-family residential",
+        "Response includes development standards (lot size, height, setbacks)",
+        "Response mentions ADUs are allowed",
+        "Response mentions California SB 9 and its impact on R1",
+        "Response includes a caveat about verifying with the planning department"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Can I open a restaurant in a C2 zone in LA?",
+      "expected_output": "Confirms restaurants are permitted by right in C2, explains C2, mentions parking, distinguishes by-right vs conditional uses.",
+      "files": [],
+      "assertions": [
+        "Response confirms restaurants are permitted in C2",
+        "Response identifies C2 as General Commercial",
+        "Response mentions parking requirements",
+        "Response includes practical next steps or caveats"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "What's the difference between R6 and R8 in NYC?",
+      "expected_output": "Comparison of FAR, height, contextual variants, parking, and geographic context.",
+      "files": [],
+      "assertions": [
+        "Response correctly states R6 and R8 FAR values",
+        "Response mentions contextual variants (A, B suffixes)",
+        "Response compares height limits",
+        "Response gives geographic context"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "I want to build a duplex on my lot in an R1 zone in LA. Is that possible?",
+      "expected_output": "Explains SB 9 path to duplex on R1, lists conditions, mentions ADU alternative.",
+      "files": [],
+      "assertions": [
+        "Response acknowledges R1 traditionally does not allow duplexes",
+        "Response mentions SB 9 as a path to building a duplex",
+        "Response lists SB 9 conditions",
+        "Response recommends consulting the planning department"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "What are the zoning rules in Houston, Texas?",
+      "expected_output": "Explains Houston has no traditional zoning code, mentions deed restrictions and other regulatory tools.",
+      "files": [],
+      "assertions": [
+        "Response identifies that Houston has no traditional zoning",
+        "Response mentions deed restrictions as an alternative",
+        "Response is helpful despite Houston being a special case"
+      ]
+    }
+  ]
+}
